@@ -1,0 +1,2058 @@
+{
+ "voices": {
+  "nian": {
+   "voice": "zh-CN-YunxiaNeural",
+   "rate": "+0%"
+  },
+  "dad": {
+   "voice": "zh-CN-YunxiNeural",
+   "rate": "-5%"
+  }
+ },
+ "clips": {
+  "dad|哎呀，这位亲戚太远啦，连爸爸都得去翻家谱。退一节试试？": {
+   "file": "dad/d63bcf4722da",
+   "seconds": 6.53
+  },
+  "dad|爸爸的爸爸": {
+   "file": "dad/e001df053eb6",
+   "seconds": 1.99
+  },
+  "dad|爸爸的爸爸，你叫他什么？": {
+   "file": "dad/60b2517d5713",
+   "seconds": 3.24
+  },
+  "dad|爸爸的爸爸的爸爸，你该怎么叫？": {
+   "file": "dad/604dc1738410",
+   "seconds": 3.53
+  },
+  "dad|爸爸的爸爸的爸爸，你叫他什么？": {
+   "file": "dad/14c5de824229",
+   "seconds": 3.58
+  },
+  "dad|爸爸的爸爸的哥哥，你该怎么叫？": {
+   "file": "dad/44c75dea51bd",
+   "seconds": 3.34
+  },
+  "dad|爸爸的爸爸的哥哥，你叫他什么？": {
+   "file": "dad/cc290717792d",
+   "seconds": 3.41
+  },
+  "dad|爸爸的爸爸的妈妈，你该怎么叫？": {
+   "file": "dad/9ee18b7891cb",
+   "seconds": 3.53
+  },
+  "dad|爸爸的爸爸的妈妈，你叫她什么？": {
+   "file": "dad/d30f556f4e1c",
+   "seconds": 3.43
+  },
+  "dad|爸爸的爸爸的妹妹，你该怎么叫？": {
+   "file": "dad/5c206926fef9",
+   "seconds": 3.43
+  },
+  "dad|爸爸的爸爸的妹妹，你叫她什么？": {
+   "file": "dad/c90155998586",
+   "seconds": 3.43
+  },
+  "dad|爸爸的爸爸叫爷爷，爸爸的妈妈叫奶奶。你是他们的孙子或者孙女。": {
+   "file": "dad/2a4a88c278c5",
+   "seconds": 6.67
+  },
+  "dad|爸爸的弟弟": {
+   "file": "dad/e993f03175e4",
+   "seconds": 1.99
+  },
+  "dad|爸爸的弟弟，你叫他什么？": {
+   "file": "dad/b122fc55f280",
+   "seconds": 3.12
+  },
+  "dad|爸爸的弟弟的老婆": {
+   "file": "dad/3513d75871d0",
+   "seconds": 2.4
+  },
+  "dad|爸爸的弟弟的老婆，你该怎么叫？": {
+   "file": "dad/db3350378896",
+   "seconds": 3.65
+  },
+  "dad|爸爸的弟弟的老婆，你叫她什么？": {
+   "file": "dad/bdf7e5c5741c",
+   "seconds": 3.6
+  },
+  "dad|爸爸的弟弟的女儿，比你小": {
+   "file": "dad/2c4943e05ab2",
+   "seconds": 3.24
+  },
+  "dad|爸爸的弟弟的女儿，比你小，你该怎么叫？": {
+   "file": "dad/44d609e3bac6",
+   "seconds": 4.25
+  },
+  "dad|爸爸的弟弟的女儿，比你小，你叫她什么？": {
+   "file": "dad/f154dc287726",
+   "seconds": 4.27
+  },
+  "dad|爸爸的弟弟叫叔叔。路上遇到的大人你也会礼貌地叫叔叔，不过那就不是亲戚啦。": {
+   "file": "dad/c80515cfe0e2",
+   "seconds": 8.28
+  },
+  "dad|爸爸的哥哥": {
+   "file": "dad/a39c1e0fda69",
+   "seconds": 1.92
+  },
+  "dad|爸爸的哥哥，你叫他什么？": {
+   "file": "dad/f27eba47c12a",
+   "seconds": 3.07
+  },
+  "dad|爸爸的哥哥的儿子，比你大": {
+   "file": "dad/5b85ab7eedac",
+   "seconds": 3.17
+  },
+  "dad|爸爸的哥哥的儿子，比你大，你该怎么叫？": {
+   "file": "dad/0200fb60c040",
+   "seconds": 4.34
+  },
+  "dad|爸爸的哥哥的儿子，比你大，你叫他什么？": {
+   "file": "dad/0a452e2cc151",
+   "seconds": 4.27
+  },
+  "dad|爸爸的哥哥的老婆": {
+   "file": "dad/21ca5dcaaf56",
+   "seconds": 2.45
+  },
+  "dad|爸爸的哥哥的老婆，你该怎么叫？": {
+   "file": "dad/0b6be35aa77c",
+   "seconds": 3.55
+  },
+  "dad|爸爸的哥哥的老婆，你叫她什么？": {
+   "file": "dad/0f306fd4ca59",
+   "seconds": 3.53
+  },
+  "dad|爸爸的哥哥叫伯伯，爸爸的弟弟叫叔叔。记住：比爸爸大是“伯”，比爸爸小是“叔”。": {
+   "file": "dad/66d1e5635ccc",
+   "seconds": 7.99
+  },
+  "dad|爸爸的姐姐、妹妹都叫姑姑。比爸爸大的叫大姑，比爸爸小的叫小姑。": {
+   "file": "dad/30800477ace6",
+   "seconds": 7.49
+  },
+  "dad|爸爸的妈妈": {
+   "file": "dad/3707cfec1395",
+   "seconds": 1.92
+  },
+  "dad|爸爸的妈妈，你叫她什么？": {
+   "file": "dad/1b8a9cbae362",
+   "seconds": 3.14
+  },
+  "dad|爸爸的妈妈的哥哥，你该怎么叫？": {
+   "file": "dad/544d8a019b0c",
+   "seconds": 3.36
+  },
+  "dad|爸爸的妈妈的哥哥，你叫他什么？": {
+   "file": "dad/deac7a371044",
+   "seconds": 3.38
+  },
+  "dad|爸爸的妈妈叫奶奶。奶奶就是爸爸小时候天天喊的“妈”。": {
+   "file": "dad/4639813e1bf6",
+   "seconds": 6.14
+  },
+  "dad|爸爸的妹妹": {
+   "file": "dad/7e818832bdae",
+   "seconds": 1.9
+  },
+  "dad|爸爸的妹妹，你叫她什么？": {
+   "file": "dad/5ae233224261",
+   "seconds": 3
+  },
+  "dad|爸爸的妹妹的老公": {
+   "file": "dad/f0ebb17ba215",
+   "seconds": 2.33
+  },
+  "dad|爸爸的妹妹的老公，你该怎么叫？": {
+   "file": "dad/c7e44d28a083",
+   "seconds": 3.46
+  },
+  "dad|爸爸的妹妹的老公，你叫他什么？": {
+   "file": "dad/0cef51186331",
+   "seconds": 3.55
+  },
+  "dad|爸爸的妹妹的女儿，比你大": {
+   "file": "dad/0d0551a2a334",
+   "seconds": 3.05
+  },
+  "dad|爸爸的妹妹的女儿，比你大，你该怎么叫？": {
+   "file": "dad/8d846acc3e01",
+   "seconds": 4.18
+  },
+  "dad|爸爸的妹妹的女儿，比你大，你叫她什么？": {
+   "file": "dad/f936fe2f7191",
+   "seconds": 4.13
+  },
+  "dad|辈分有点难，慢慢来。先找到爸爸妈妈那一辈，再往上数、往下数。": {
+   "file": "dad/434d5e2b898a",
+   "seconds": 7.3
+  },
+  "dad|比你大的男孩子是哥哥，你就是他的弟弟或者妹妹。": {
+   "file": "dad/c4c6b8996a1c",
+   "seconds": 5.28
+  },
+  "dad|比你大的女孩子是姐姐，你就是她的弟弟或者妹妹。": {
+   "file": "dad/87c68ebbd35f",
+   "seconds": 5.3
+  },
+  "dad|表弟叫你什么？": {
+   "file": "dad/f1389669eab9",
+   "seconds": 2.06
+  },
+  "dad|表弟就是妈妈的哥哥的儿子，和你是一辈的。": {
+   "file": "dad/968c11beab4d",
+   "seconds": 4.03
+  },
+  "dad|表弟是妈妈家的亲戚：表弟就是妈妈的哥哥的儿子。": {
+   "file": "dad/c55a99abb331",
+   "seconds": 4.8
+  },
+  "dad|表姐叫你什么？": {
+   "file": "dad/aad03ff7aac0",
+   "seconds": 2.06
+  },
+  "dad|表姐就是爸爸的妹妹的女儿，和你是一辈的。": {
+   "file": "dad/3c6ed16dc35f",
+   "seconds": 4.25
+  },
+  "dad|表姐是爸爸家的亲戚：表姐就是爸爸的妹妹的女儿。": {
+   "file": "dad/c84780fce184",
+   "seconds": 4.97
+  },
+  "dad|表妹叫你什么？": {
+   "file": "dad/fa1eca9b355c",
+   "seconds": 2.09
+  },
+  "dad|表妹就是妈妈的姐姐的女儿，和你是一辈的。": {
+   "file": "dad/fe71795e12dd",
+   "seconds": 4.1
+  },
+  "dad|表妹是妈妈家的亲戚：表妹就是妈妈的姐姐的女儿。": {
+   "file": "dad/7709db2e8381",
+   "seconds": 4.92
+  },
+  "dad|别怕，咱们画一棵家族树，一个一个认。": {
+   "file": "dad/fc585cd35126",
+   "seconds": 4.25
+  },
+  "dad|伯伯、叔叔家的孩子，是你的堂哥、堂姐、堂弟、堂妹。你们的爷爷是同一个人，通常还和你一个姓。": {
+   "file": "dad/d4e7b25f613f",
+   "seconds": 10.34
+  },
+  "dad|伯伯的老婆叫伯母，有的地方叫大妈、大娘。": {
+   "file": "dad/0fd18eb114d5",
+   "seconds": 4.73
+  },
+  "dad|伯伯叫你什么？": {
+   "file": "dad/5b0b322fe3d5",
+   "seconds": 2.02
+  },
+  "dad|伯伯就是爸爸的哥哥，是爸爸妈妈那一辈的。": {
+   "file": "dad/216dbe9ae789",
+   "seconds": 4.03
+  },
+  "dad|伯伯是爸爸家的亲戚：伯伯就是爸爸的哥哥。": {
+   "file": "dad/c933f5d95396",
+   "seconds": 4.34
+  },
+  "dad|伯和叔，看大小。爸爸的哥哥叫伯伯，爸爸的弟弟叫叔叔。比爸爸大是“伯”，比爸爸小是“叔”。": {
+   "file": "dad/c4b4c874f3d9",
+   "seconds": 9.26
+  },
+  "dad|伯母叫你什么？": {
+   "file": "dad/1093969797da",
+   "seconds": 1.99
+  },
+  "dad|伯母就是爸爸的哥哥的老婆，是爸爸妈妈那一辈的。": {
+   "file": "dad/558c9f757a06",
+   "seconds": 4.54
+  },
+  "dad|伯母是爸爸家的亲戚：伯母就是爸爸的哥哥的老婆。": {
+   "file": "dad/53aac3a973f0",
+   "seconds": 4.97
+  },
+  "dad|不错！大部分亲戚都站对了队。": {
+   "file": "dad/d7f07e4cc615",
+   "seconds": 4.08
+  },
+  "dad|不错！再少翻几次，就能拿三颗星。": {
+   "file": "dad/ac9a9d07919a",
+   "seconds": 4.87
+  },
+  "dad|不错！再想想分错的那几位，是从谁那边连过来的。": {
+   "file": "dad/dac53e6c61a3",
+   "seconds": 5.81
+  },
+  "dad|不错哦！错的那几个，去家族树里再看一眼就记住了。": {
+   "file": "dad/90af683b8d08",
+   "seconds": 5.76
+  },
+  "dad|答案是爸爸的爸爸。": {
+   "file": "dad/b2a09f0d67cc",
+   "seconds": 2.35
+  },
+  "dad|答案是爸爸的爸爸的爸爸。": {
+   "file": "dad/89bdec264fa0",
+   "seconds": 3.24
+  },
+  "dad|答案是爸爸的爸爸的哥哥。": {
+   "file": "dad/c892b572b106",
+   "seconds": 3.19
+  },
+  "dad|答案是爸爸的爸爸的妈妈。": {
+   "file": "dad/c354cd4a81ee",
+   "seconds": 3.26
+  },
+  "dad|答案是爸爸的爸爸的妹妹。": {
+   "file": "dad/64c55a0537d1",
+   "seconds": 3.26
+  },
+  "dad|答案是爸爸的弟弟。": {
+   "file": "dad/23cf1025cad2",
+   "seconds": 2.59
+  },
+  "dad|答案是爸爸的弟弟的老婆。": {
+   "file": "dad/aa639df522e4",
+   "seconds": 3.38
+  },
+  "dad|答案是爸爸的弟弟的女儿。": {
+   "file": "dad/6f0d9e68f32b",
+   "seconds": 3.24
+  },
+  "dad|答案是爸爸的哥哥。": {
+   "file": "dad/c7e139ab3980",
+   "seconds": 2.4
+  },
+  "dad|答案是爸爸的哥哥的儿子。": {
+   "file": "dad/1bd47d38bf24",
+   "seconds": 3.12
+  },
+  "dad|答案是爸爸的哥哥的老婆。": {
+   "file": "dad/d3cfb3195878",
+   "seconds": 3.26
+  },
+  "dad|答案是爸爸的妈妈。": {
+   "file": "dad/3cbf2b304f98",
+   "seconds": 2.54
+  },
+  "dad|答案是爸爸的妈妈的哥哥。": {
+   "file": "dad/af56f30d3e79",
+   "seconds": 3.1
+  },
+  "dad|答案是爸爸的妹妹。": {
+   "file": "dad/786bdd7c05bd",
+   "seconds": 2.45
+  },
+  "dad|答案是爸爸的妹妹的老公。": {
+   "file": "dad/5445d8a06ce8",
+   "seconds": 3.07
+  },
+  "dad|答案是爸爸的妹妹的女儿。": {
+   "file": "dad/24ddbeed41ed",
+   "seconds": 3.14
+  },
+  "dad|答案是表弟。": {
+   "file": "dad/75d4dcecac04",
+   "seconds": 2.06
+  },
+  "dad|答案是表哥。": {
+   "file": "dad/9a91cc3d58af",
+   "seconds": 1.97
+  },
+  "dad|答案是表姐。": {
+   "file": "dad/4e9c57d2a489",
+   "seconds": 1.99
+  },
+  "dad|答案是表妹。": {
+   "file": "dad/7854cf08d2f9",
+   "seconds": 1.94
+  },
+  "dad|答案是伯伯。": {
+   "file": "dad/3871a060a6d2",
+   "seconds": 1.94
+  },
+  "dad|答案是伯母。": {
+   "file": "dad/522fee34752b",
+   "seconds": 1.97
+  },
+  "dad|答案是曾孙。": {
+   "file": "dad/cf70dba5517c",
+   "seconds": 2.06
+  },
+  "dad|答案是大爷爷。": {
+   "file": "dad/81232f649523",
+   "seconds": 2.47
+  },
+  "dad|答案是哥哥的儿子。": {
+   "file": "dad/e088fcf59c13",
+   "seconds": 2.42
+  },
+  "dad|答案是哥哥的老婆。": {
+   "file": "dad/d8251cc2ef63",
+   "seconds": 2.69
+  },
+  "dad|答案是姑父。": {
+   "file": "dad/bd74e4dc0db3",
+   "seconds": 1.92
+  },
+  "dad|答案是姑姑。": {
+   "file": "dad/9a737b93c35c",
+   "seconds": 1.92
+  },
+  "dad|答案是姑奶奶。": {
+   "file": "dad/28db44b52ff2",
+   "seconds": 2.09
+  },
+  "dad|答案是姐夫。": {
+   "file": "dad/9ff6a65b7012",
+   "seconds": 1.94
+  },
+  "dad|答案是姐姐的老公。": {
+   "file": "dad/940a0f776c45",
+   "seconds": 2.57
+  },
+  "dad|答案是姐姐的女儿。": {
+   "file": "dad/71e88d96879a",
+   "seconds": 2.71
+  },
+  "dad|答案是舅公。": {
+   "file": "dad/a532ed372a49",
+   "seconds": 2.06
+  },
+  "dad|答案是舅舅。": {
+   "file": "dad/7b38c796ad54",
+   "seconds": 1.99
+  },
+  "dad|答案是舅妈。": {
+   "file": "dad/9cb0fce7779e",
+   "seconds": 1.99
+  },
+  "dad|答案是舅爷爷。": {
+   "file": "dad/f57849f5f99e",
+   "seconds": 2.5
+  },
+  "dad|答案是妈妈的爸爸。": {
+   "file": "dad/3a37e8e59e29",
+   "seconds": 2.52
+  },
+  "dad|答案是妈妈的哥哥。": {
+   "file": "dad/7c77defcc397",
+   "seconds": 2.45
+  },
+  "dad|答案是妈妈的哥哥的儿子。": {
+   "file": "dad/6640d8c6df26",
+   "seconds": 3.26
+  },
+  "dad|答案是妈妈的哥哥的老婆。": {
+   "file": "dad/d281af657be7",
+   "seconds": 3.41
+  },
+  "dad|答案是妈妈的姐姐。": {
+   "file": "dad/c846f6736ac8",
+   "seconds": 2.54
+  },
+  "dad|答案是妈妈的姐姐的老公。": {
+   "file": "dad/3a8548e5309d",
+   "seconds": 3.26
+  },
+  "dad|答案是妈妈的姐姐的女儿。": {
+   "file": "dad/eef8588b80b3",
+   "seconds": 3.19
+  },
+  "dad|答案是妈妈的妈妈。": {
+   "file": "dad/79758938ad22",
+   "seconds": 2.45
+  },
+  "dad|答案是妈妈的妈妈的哥哥。": {
+   "file": "dad/fd8387cd9e3a",
+   "seconds": 3.22
+  },
+  "dad|答案是妈妈的妈妈的妹妹。": {
+   "file": "dad/8ee2411b86cb",
+   "seconds": 3.22
+  },
+  "dad|答案是奶奶。": {
+   "file": "dad/fd1940000cb7",
+   "seconds": 1.94
+  },
+  "dad|答案是嫂子。": {
+   "file": "dad/bdfa7e05355a",
+   "seconds": 2.04
+  },
+  "dad|答案是婶婶。": {
+   "file": "dad/6b77e6b180af",
+   "seconds": 1.94
+  },
+  "dad|答案是甥孙。": {
+   "file": "dad/9a3dadb77bd6",
+   "seconds": 2.11
+  },
+  "dad|答案是甥外孙。": {
+   "file": "dad/20f8f1072f90",
+   "seconds": 2.59
+  },
+  "dad|答案是叔叔。": {
+   "file": "dad/ee946393d086",
+   "seconds": 1.99
+  },
+  "dad|答案是孙子。": {
+   "file": "dad/ba85700d7f6a",
+   "seconds": 1.97
+  },
+  "dad|答案是太奶奶。": {
+   "file": "dad/d1d4c824f3f2",
+   "seconds": 2.11
+  },
+  "dad|答案是太爷爷。": {
+   "file": "dad/06bd1d2cdc21",
+   "seconds": 2.09
+  },
+  "dad|答案是堂弟。": {
+   "file": "dad/3d54d7758d1b",
+   "seconds": 2.04
+  },
+  "dad|答案是堂哥。": {
+   "file": "dad/2ce5ce8bbc9e",
+   "seconds": 2.09
+  },
+  "dad|答案是堂妹。": {
+   "file": "dad/2f05b645f777",
+   "seconds": 1.97
+  },
+  "dad|答案是外公。": {
+   "file": "dad/f072cc406022",
+   "seconds": 2.06
+  },
+  "dad|答案是外婆。": {
+   "file": "dad/0642f95ec1a8",
+   "seconds": 2.11
+  },
+  "dad|答案是外甥。": {
+   "file": "dad/d1191cf3782b",
+   "seconds": 1.99
+  },
+  "dad|答案是外甥女。": {
+   "file": "dad/90dac861df7c",
+   "seconds": 2.06
+  },
+  "dad|答案是外孙。": {
+   "file": "dad/86dc7260b66d",
+   "seconds": 2.06
+  },
+  "dad|答案是小舅。": {
+   "file": "dad/468b098b198c",
+   "seconds": 2.11
+  },
+  "dad|答案是爷爷。": {
+   "file": "dad/fa7f9f60ebb4",
+   "seconds": 1.94
+  },
+  "dad|答案是姨父。": {
+   "file": "dad/11d354e935d4",
+   "seconds": 1.9
+  },
+  "dad|答案是姨妈。": {
+   "file": "dad/8420f6719e00",
+   "seconds": 1.94
+  },
+  "dad|答案是姨婆。": {
+   "file": "dad/fb55c1a99785",
+   "seconds": 2.06
+  },
+  "dad|答案是侄孙。": {
+   "file": "dad/6f73a54c5f9d",
+   "seconds": 2.06
+  },
+  "dad|答案是侄子。": {
+   "file": "dad/c707f7a0a6c8",
+   "seconds": 1.97
+  },
+  "dad|大爷爷叫你什么？": {
+   "file": "dad/370d0b8222de",
+   "seconds": 2.18
+  },
+  "dad|大爷爷就是爸爸的爸爸的哥哥，是爷爷奶奶那一辈的。": {
+   "file": "dad/28bc0eef3481",
+   "seconds": 4.7
+  },
+  "dad|大爷爷是爸爸家的亲戚：大爷爷就是爸爸的爸爸的哥哥。": {
+   "file": "dad/8b0a6fb541d7",
+   "seconds": 5.02
+  },
+  "dad|当然！闯关答对了，能拿星星。": {
+   "file": "dad/f98b5562e934",
+   "seconds": 4.37
+  },
+  "dad|叮咚！是爸爸的爸爸。快叫他！": {
+   "file": "dad/61eb0bb2f5d3",
+   "seconds": 4.75
+  },
+  "dad|叮咚！是爸爸的爸爸的爸爸。快叫他！": {
+   "file": "dad/675ae0c7bf38",
+   "seconds": 5.06
+  },
+  "dad|叮咚！是爸爸的爸爸的哥哥。快叫他！": {
+   "file": "dad/a73b8157a5c7",
+   "seconds": 5.06
+  },
+  "dad|叮咚！是爸爸的爸爸的妈妈。快叫她！": {
+   "file": "dad/187e2ce96ed9",
+   "seconds": 5.14
+  },
+  "dad|叮咚！是爸爸的爸爸的妹妹。快叫她！": {
+   "file": "dad/8532f54e9f26",
+   "seconds": 5.06
+  },
+  "dad|叮咚！是爸爸的弟弟。快叫他！": {
+   "file": "dad/270eff75b1b7",
+   "seconds": 4.75
+  },
+  "dad|叮咚！是爸爸的弟弟的老婆。快叫她！": {
+   "file": "dad/118f37b9ee35",
+   "seconds": 5.21
+  },
+  "dad|叮咚！是爸爸的弟弟的女儿，比你小。快叫她！": {
+   "file": "dad/b7fbbc0e3131",
+   "seconds": 6.12
+  },
+  "dad|叮咚！是爸爸的哥哥。快叫他！": {
+   "file": "dad/b78f2a976867",
+   "seconds": 4.7
+  },
+  "dad|叮咚！是爸爸的哥哥的儿子，比你大。快叫他！": {
+   "file": "dad/868f62dbb373",
+   "seconds": 5.98
+  },
+  "dad|叮咚！是爸爸的哥哥的老婆。快叫她！": {
+   "file": "dad/8f5295a4b547",
+   "seconds": 5.21
+  },
+  "dad|叮咚！是爸爸的妈妈。快叫她！": {
+   "file": "dad/d6a49da6f752",
+   "seconds": 4.75
+  },
+  "dad|叮咚！是爸爸的妈妈的哥哥。快叫他！": {
+   "file": "dad/91e4cd7c875b",
+   "seconds": 5.04
+  },
+  "dad|叮咚！是爸爸的妹妹。快叫她！": {
+   "file": "dad/c6b3e22797f3",
+   "seconds": 4.66
+  },
+  "dad|叮咚！是爸爸的妹妹的老公。快叫他！": {
+   "file": "dad/5aea5f36eb2a",
+   "seconds": 5.09
+  },
+  "dad|叮咚！是爸爸的妹妹的女儿，比你大。快叫她！": {
+   "file": "dad/dfdc38d8f281",
+   "seconds": 5.95
+  },
+  "dad|叮咚！是哥哥的儿子。快叫他！": {
+   "file": "dad/a84d6b828902",
+   "seconds": 4.73
+  },
+  "dad|叮咚！是哥哥的老婆。快叫她！": {
+   "file": "dad/03d353dd4920",
+   "seconds": 4.82
+  },
+  "dad|叮咚！是姐姐的老公。快叫他！": {
+   "file": "dad/11943e00d6f8",
+   "seconds": 4.73
+  },
+  "dad|叮咚！是姐姐的女儿。快叫她！": {
+   "file": "dad/2d795d3c0044",
+   "seconds": 4.85
+  },
+  "dad|叮咚！是妈妈的爸爸。快叫他！": {
+   "file": "dad/d0517f12ea7b",
+   "seconds": 4.75
+  },
+  "dad|叮咚！是妈妈的哥哥。快叫他！": {
+   "file": "dad/057f016d02f4",
+   "seconds": 4.63
+  },
+  "dad|叮咚！是妈妈的哥哥的儿子，比你小。快叫他！": {
+   "file": "dad/c0645f921c0f",
+   "seconds": 6.07
+  },
+  "dad|叮咚！是妈妈的哥哥的老婆。快叫她！": {
+   "file": "dad/c6668818838d",
+   "seconds": 5.16
+  },
+  "dad|叮咚！是妈妈的姐姐。快叫她！": {
+   "file": "dad/2fcce2de0392",
+   "seconds": 4.7
+  },
+  "dad|叮咚！是妈妈的姐姐的老公。快叫他！": {
+   "file": "dad/ba324b979ebc",
+   "seconds": 5.02
+  },
+  "dad|叮咚！是妈妈的姐姐的女儿，比你小。快叫她！": {
+   "file": "dad/657020ab2c04",
+   "seconds": 6
+  },
+  "dad|叮咚！是妈妈的妈妈。快叫她！": {
+   "file": "dad/a82d6789061f",
+   "seconds": 4.75
+  },
+  "dad|叮咚！是妈妈的妈妈的哥哥。快叫他！": {
+   "file": "dad/8b0e2d7ef1c5",
+   "seconds": 4.99
+  },
+  "dad|叮咚！是妈妈的妈妈的妹妹。快叫她！": {
+   "file": "dad/34ebd7d995c5",
+   "seconds": 5.02
+  },
+  "dad|翻得有点多也没关系，多玩几次就记住啦。": {
+   "file": "dad/401b04e3f728",
+   "seconds": 4.1
+  },
+  "dad|翻开两张牌：一张写着是谁，一张写着叫什么。配成一对，就能留下来。": {
+   "file": "dad/1588972f7d1c",
+   "seconds": 7.75
+  },
+  "dad|刚开始都会叫混，爸爸小时候也一样。再来一次吧！": {
+   "file": "dad/fe9511a1f555",
+   "seconds": 5.76
+  },
+  "dad|哥哥的儿子": {
+   "file": "dad/e2a066a921bc",
+   "seconds": 1.97
+  },
+  "dad|哥哥的儿子，你该怎么叫？": {
+   "file": "dad/966da843cdd3",
+   "seconds": 3.14
+  },
+  "dad|哥哥的儿子，你叫他什么？": {
+   "file": "dad/97280c506937",
+   "seconds": 3.19
+  },
+  "dad|哥哥的儿子叫侄子。这时候你就升级当叔叔或者姑姑啦，虽然你可能还在上学！": {
+   "file": "dad/1a3b289ca252",
+   "seconds": 7.54
+  },
+  "dad|哥哥的老婆": {
+   "file": "dad/e8815a9e617d",
+   "seconds": 2.02
+  },
+  "dad|哥哥的老婆，你该怎么叫？": {
+   "file": "dad/478e9b52bcaf",
+   "seconds": 3.12
+  },
+  "dad|哥哥的老婆，你叫她什么？": {
+   "file": "dad/81bffe05592f",
+   "seconds": 3.14
+  },
+  "dad|哥哥的老婆叫嫂子。平时她多半直接叫你的名字。": {
+   "file": "dad/5dc1ed2b37e0",
+   "seconds": 5.62
+  },
+  "dad|姑、舅、姨。爸爸的姐妹是姑姑；妈妈的兄弟是舅舅，妈妈的姐妹是姨妈、小姨。": {
+   "file": "dad/e077cf45f63f",
+   "seconds": 8.98
+  },
+  "dad|姑父叫你什么？": {
+   "file": "dad/67a596d75b05",
+   "seconds": 1.99
+  },
+  "dad|姑父就是爸爸的妹妹的老公，是爸爸妈妈那一辈的。": {
+   "file": "dad/d60bf232a1e3",
+   "seconds": 4.63
+  },
+  "dad|姑父是爸爸家的亲戚：姑父就是爸爸的妹妹的老公。": {
+   "file": "dad/9a2f14f8f751",
+   "seconds": 4.85
+  },
+  "dad|姑姑的老公叫姑父：姑姑的“姑”，后面加一个“父”字。": {
+   "file": "dad/d1c646f54b80",
+   "seconds": 4.87
+  },
+  "dad|姑姑家的孩子是“表”亲，不是“堂”亲。虽然在爸爸这边，可只有爸爸的哥哥弟弟家的孩子才算“堂”。": {
+   "file": "dad/cf9ed5a7a27c",
+   "seconds": 9.53
+  },
+  "dad|姑姑叫你什么？": {
+   "file": "dad/a0b9d7321488",
+   "seconds": 2.02
+  },
+  "dad|姑姑就是爸爸的妹妹，是爸爸妈妈那一辈的。": {
+   "file": "dad/3946dd0e6e2e",
+   "seconds": 4.13
+  },
+  "dad|姑姑是爸爸家的亲戚：姑姑就是爸爸的妹妹。": {
+   "file": "dad/ff3f611447c9",
+   "seconds": 4.37
+  },
+  "dad|姑奶奶叫你什么？": {
+   "file": "dad/905b367e0457",
+   "seconds": 2.11
+  },
+  "dad|姑奶奶就是爸爸的爸爸的妹妹，是爷爷奶奶那一辈的。": {
+   "file": "dad/62ebd0ef7244",
+   "seconds": 4.8
+  },
+  "dad|姑奶奶是爸爸家的亲戚：姑奶奶就是爸爸的爸爸的妹妹。": {
+   "file": "dad/ef34d6063b48",
+   "seconds": 5.06
+  },
+  "dad|过年啦！亲戚们一个一个来敲门。爸爸先告诉你是谁，你来叫人，叫对了就有红包。": {
+   "file": "dad/c1a88fb531a6",
+   "seconds": 8.81
+  },
+  "dad|红包没拿几个也没关系。下次开门前先想想，亲戚是从爸爸那边来的，还是妈妈那边来的。": {
+   "file": "dad/b8896aa8973d",
+   "seconds": 8.93
+  },
+  "dad|红包拿了满满一兜！过年亲戚来了，你一定叫得又快又准。": {
+   "file": "dad/16aac2f1e136",
+   "seconds": 6.14
+  },
+  "dad|红包拿了一大半！叫错的那几位，去家族树里再认一认。": {
+   "file": "dad/55c88b6d51e1",
+   "seconds": 5.86
+  },
+  "dad|记性真好！没翻几下就全配上了。": {
+   "file": "dad/d917960203ea",
+   "seconds": 4.73
+  },
+  "dad|记住一个窍门：看亲戚是从爸爸连过来的，还是从妈妈连过来的。": {
+   "file": "dad/6c14fe2970b2",
+   "seconds": 6.29
+  },
+  "dad|叫舅舅！不信你坐上小火车，自己拼一拼。": {
+   "file": "dad/bea59817100f",
+   "seconds": 4.78
+  },
+  "dad|结了婚换个字。伯伯配伯母，叔叔配婶婶，舅舅配舅妈；姑姑、姨妈的老公，叫姑父、姨父。": {
+   "file": "dad/029619459a7f",
+   "seconds": 10.34
+  },
+  "dad|姐夫就是姐姐的老公，和你是一辈的。": {
+   "file": "dad/ce9b2b4c210a",
+   "seconds": 3.79
+  },
+  "dad|姐姐的孩子叫外甥、外甥女。你是她妈妈的弟弟妹妹，所以她叫你小舅或者小姨。": {
+   "file": "dad/272da401fa89",
+   "seconds": 8.21
+  },
+  "dad|姐姐的老公": {
+   "file": "dad/ea57b06e117d",
+   "seconds": 1.97
+  },
+  "dad|姐姐的老公，你该怎么叫？": {
+   "file": "dad/fe14ec8ac3f2",
+   "seconds": 3.22
+  },
+  "dad|姐姐的老公，你叫他什么？": {
+   "file": "dad/2809e0ff944b",
+   "seconds": 3.29
+  },
+  "dad|姐姐的老公叫姐夫。按规矩，他管你叫小舅子或者小姨子。": {
+   "file": "dad/a84241f9f3ae",
+   "seconds": 6.58
+  },
+  "dad|姐姐的女儿": {
+   "file": "dad/2ee11da16e91",
+   "seconds": 2.06
+  },
+  "dad|姐姐的女儿，你该怎么叫？": {
+   "file": "dad/4f89fa0dcbb3",
+   "seconds": 3.12
+  },
+  "dad|姐姐的女儿，你叫她什么？": {
+   "file": "dad/c997cb93a3ce",
+   "seconds": 3.12
+  },
+  "dad|舅公叫你什么？": {
+   "file": "dad/4b40a342cc16",
+   "seconds": 2.06
+  },
+  "dad|舅公就是妈妈的妈妈的哥哥，是爷爷奶奶那一辈的。": {
+   "file": "dad/9d32e6de87ac",
+   "seconds": 4.58
+  },
+  "dad|舅公是妈妈家的亲戚：舅公就是妈妈的妈妈的哥哥。": {
+   "file": "dad/57c537e700e3",
+   "seconds": 4.7
+  },
+  "dad|舅舅的老婆叫舅妈：舅舅的“舅”，后面加一个“妈”字。": {
+   "file": "dad/4f3e71b46fe1",
+   "seconds": 4.87
+  },
+  "dad|舅舅家的孩子也是表亲。妈妈那边的兄弟姐妹家的孩子，全都叫表哥、表姐、表弟、表妹。": {
+   "file": "dad/e299ac03acff",
+   "seconds": 9.17
+  },
+  "dad|舅舅叫你什么？": {
+   "file": "dad/8ddc10a4d0f7",
+   "seconds": 2.04
+  },
+  "dad|舅舅就是妈妈的哥哥，是爸爸妈妈那一辈的。": {
+   "file": "dad/5c1084284fb8",
+   "seconds": 4.15
+  },
+  "dad|舅舅是妈妈家的亲戚：舅舅就是妈妈的哥哥。": {
+   "file": "dad/4da1bdf4494f",
+   "seconds": 4.37
+  },
+  "dad|舅妈叫你什么？": {
+   "file": "dad/880519fef850",
+   "seconds": 2.04
+  },
+  "dad|舅妈就是妈妈的哥哥的老婆，是爸爸妈妈那一辈的。": {
+   "file": "dad/83898bdb7758",
+   "seconds": 4.58
+  },
+  "dad|舅妈是妈妈家的亲戚：舅妈就是妈妈的哥哥的老婆。": {
+   "file": "dad/280ff4957dfb",
+   "seconds": 4.7
+  },
+  "dad|舅爷爷叫你什么？": {
+   "file": "dad/e29682b9abf8",
+   "seconds": 2.21
+  },
+  "dad|舅爷爷就是爸爸的妈妈的哥哥，是爷爷奶奶那一辈的。": {
+   "file": "dad/b66408a78963",
+   "seconds": 4.7
+  },
+  "dad|舅爷爷是爸爸家的亲戚：舅爷爷就是爸爸的妈妈的哥哥。": {
+   "file": "dad/0f87e2167f2c",
+   "seconds": 5.11
+  },
+  "dad|妈妈的爸爸": {
+   "file": "dad/830e5ed289c2",
+   "seconds": 2.06
+  },
+  "dad|妈妈的爸爸，你叫他什么？": {
+   "file": "dad/e14df8f2e0d5",
+   "seconds": 3.38
+  },
+  "dad|妈妈的爸爸妈妈，前面多一个“外”字：外公、外婆。北方很多地方叫姥爷、姥姥。": {
+   "file": "dad/e8f077f869fc",
+   "seconds": 9.12
+  },
+  "dad|妈妈的哥哥": {
+   "file": "dad/5f35798f0c07",
+   "seconds": 1.97
+  },
+  "dad|妈妈的哥哥，你叫他什么？": {
+   "file": "dad/f3d93c75f7c2",
+   "seconds": 3.14
+  },
+  "dad|妈妈的哥哥、弟弟都叫舅舅。比妈妈大的叫大舅，比妈妈小的叫小舅。": {
+   "file": "dad/e44900dbf2dd",
+   "seconds": 7.99
+  },
+  "dad|妈妈的哥哥的儿子，比你小": {
+   "file": "dad/3057f78f5908",
+   "seconds": 3.29
+  },
+  "dad|妈妈的哥哥的儿子，比你小，你该怎么叫？": {
+   "file": "dad/b98750930f22",
+   "seconds": 4.34
+  },
+  "dad|妈妈的哥哥的儿子，比你小，你叫他什么？": {
+   "file": "dad/665393771edd",
+   "seconds": 4.25
+  },
+  "dad|妈妈的哥哥的老婆": {
+   "file": "dad/18268f8d6965",
+   "seconds": 2.42
+  },
+  "dad|妈妈的哥哥的老婆，你该怎么叫？": {
+   "file": "dad/5a6d77bd5e02",
+   "seconds": 3.72
+  },
+  "dad|妈妈的哥哥的老婆，你叫她什么？": {
+   "file": "dad/52ec3674fe28",
+   "seconds": 3.65
+  },
+  "dad|妈妈的姐姐": {
+   "file": "dad/5e2bf1961951",
+   "seconds": 1.97
+  },
+  "dad|妈妈的姐姐，你叫她什么？": {
+   "file": "dad/fbc9128b0126",
+   "seconds": 3.36
+  },
+  "dad|妈妈的姐姐、妹妹都是“姨”。比妈妈大的叫大姨、姨妈，比妈妈小的叫小姨。": {
+   "file": "dad/ece368d92747",
+   "seconds": 8.38
+  },
+  "dad|妈妈的姐姐的老公": {
+   "file": "dad/639e4e7124d5",
+   "seconds": 2.35
+  },
+  "dad|妈妈的姐姐的老公，你该怎么叫？": {
+   "file": "dad/63242fa682db",
+   "seconds": 3.72
+  },
+  "dad|妈妈的姐姐的老公，你叫他什么？": {
+   "file": "dad/831f00276bd1",
+   "seconds": 3.89
+  },
+  "dad|妈妈的姐姐的女儿，比你小": {
+   "file": "dad/3bbd0d82cf7b",
+   "seconds": 3.24
+  },
+  "dad|妈妈的姐姐的女儿，比你小，你该怎么叫？": {
+   "file": "dad/accad6fd28a7",
+   "seconds": 4.39
+  },
+  "dad|妈妈的姐姐的女儿，比你小，你叫她什么？": {
+   "file": "dad/398d3f9c2a0c",
+   "seconds": 4.37
+  },
+  "dad|妈妈的妈妈": {
+   "file": "dad/f36da94584c1",
+   "seconds": 2.06
+  },
+  "dad|妈妈的妈妈，你叫她什么？": {
+   "file": "dad/23c9098b88a3",
+   "seconds": 3.38
+  },
+  "dad|妈妈的妈妈的哥哥，你该怎么叫？": {
+   "file": "dad/8ee8f520b8f0",
+   "seconds": 3.53
+  },
+  "dad|妈妈的妈妈的哥哥，你叫他什么？": {
+   "file": "dad/681d474f8e10",
+   "seconds": 3.5
+  },
+  "dad|妈妈的妈妈的妹妹，你该怎么叫？": {
+   "file": "dad/717adf15ee74",
+   "seconds": 3.5
+  },
+  "dad|妈妈的妈妈的妹妹，你叫她什么？": {
+   "file": "dad/840530367ec6",
+   "seconds": 3.58
+  },
+  "dad|妈妈的妈妈叫外婆，北方叫姥姥。你是外婆的外孙或者外孙女。": {
+   "file": "dad/d70601b20251",
+   "seconds": 6.58
+  },
+  "dad|妈妈那边加个外。妈妈的爸爸妈妈叫外公、外婆，你是他们的外孙、外孙女。北方叫姥爷、姥姥。": {
+   "file": "dad/125b9612d8a8",
+   "seconds": 10.85
+  },
+  "dad|每个人都有自己的辈分。把亲戚送到对的那一排：是爷爷那一辈、爸爸那一辈，还是和你一辈？": {
+   "file": "dad/87d35a951fdb",
+   "seconds": 8.64
+  },
+  "dad|奶奶的哥哥弟弟，是爸爸的舅舅。爸爸叫他舅舅，你就叫他舅爷爷。": {
+   "file": "dad/5cab0ced8b4c",
+   "seconds": 6.72
+  },
+  "dad|奶奶叫你什么？": {
+   "file": "dad/8ebd174e738e",
+   "seconds": 2.04
+  },
+  "dad|奶奶就是爸爸的妈妈，是爷爷奶奶那一辈的。": {
+   "file": "dad/fd8dbfea1ba1",
+   "seconds": 4.37
+  },
+  "dad|奶奶是爸爸家的亲戚：奶奶就是爸爸的妈妈。": {
+   "file": "dad/0e0a4ed790e7",
+   "seconds": 4.27
+  },
+  "dad|你叫他表弟，他就叫你表哥。舅舅家的孩子也是表亲。妈妈那边的兄弟姐妹家的孩子，全都叫表哥、表姐、表弟、表妹。": {
+   "file": "dad/c0586c376638",
+   "seconds": 12.24
+  },
+  "dad|你叫他伯伯，他就叫你侄子。爸爸的哥哥叫伯伯，爸爸的弟弟叫叔叔。记住：比爸爸大是“伯”，比爸爸小是“叔”。": {
+   "file": "dad/0c696a1c9342",
+   "seconds": 11.04
+  },
+  "dad|你叫他大爷爷，他就叫你侄孙。爷爷的哥哥叫大爷爷，有的地方叫伯公。就像爸爸的哥哥叫伯伯，再往上一辈就成了“伯公”。": {
+   "file": "dad/ac31a3de2731",
+   "seconds": 12.43
+  },
+  "dad|你叫他姑父，他就叫你侄子。姑姑的老公叫姑父：姑姑的“姑”，后面加一个“父”字。": {
+   "file": "dad/5569c92263e5",
+   "seconds": 7.9
+  },
+  "dad|你叫他舅公，他就叫你甥外孙。外婆的哥哥弟弟，是妈妈的舅舅。你叫他舅公，北方叫舅姥爷。": {
+   "file": "dad/0ec314ebd72a",
+   "seconds": 10.22
+  },
+  "dad|你叫他舅舅，他就叫你外甥。妈妈的哥哥、弟弟都叫舅舅。比妈妈大的叫大舅，比妈妈小的叫小舅。": {
+   "file": "dad/976674273c75",
+   "seconds": 10.92
+  },
+  "dad|你叫他舅爷爷，他就叫你甥孙。奶奶的哥哥弟弟，是爸爸的舅舅。爸爸叫他舅舅，你就叫他舅爷爷。": {
+   "file": "dad/835c072441a3",
+   "seconds": 10.08
+  },
+  "dad|你叫他叔叔，他就叫你侄子。爸爸的弟弟叫叔叔。路上遇到的大人你也会礼貌地叫叔叔，不过那就不是亲戚啦。": {
+   "file": "dad/f95e91e856de",
+   "seconds": 11.38
+  },
+  "dad|你叫他太爷爷，他就叫你曾孙。爷爷的爸爸叫太爷爷，书上写作曾祖父。你是他的曾孙或者曾孙女。": {
+   "file": "dad/cd85f35d2f3c",
+   "seconds": 10.78
+  },
+  "dad|你叫他堂哥，他就叫你堂弟。伯伯、叔叔家的孩子，是你的堂哥、堂姐、堂弟、堂妹。你们的爷爷是同一个人，通常还和你一个姓。": {
+   "file": "dad/5b962612650c",
+   "seconds": 13.27
+  },
+  "dad|你叫他外公，他就叫你外孙。妈妈的爸爸妈妈，前面多一个“外”字：外公、外婆。北方很多地方叫姥爷、姥姥。": {
+   "file": "dad/4994e1b9b484",
+   "seconds": 12.29
+  },
+  "dad|你叫他爷爷，他就叫你孙子。爸爸的爸爸叫爷爷，爸爸的妈妈叫奶奶。你是他们的孙子或者孙女。": {
+   "file": "dad/20c046515732",
+   "seconds": 9.62
+  },
+  "dad|你叫他姨父，他就叫你外甥。姨妈的老公叫姨父。和姑父一样，在“姨”后面加一个“父”字。": {
+   "file": "dad/f34ec81e1f28",
+   "seconds": 9.22
+  },
+  "dad|你叫他侄子，他就叫你叔叔。哥哥的儿子叫侄子。这时候你就升级当叔叔或者姑姑啦，虽然你可能还在上学！": {
+   "file": "dad/df48fb621062",
+   "seconds": 10.73
+  },
+  "dad|你叫她表姐，她就叫你表弟。姑姑家的孩子是“表”亲，不是“堂”亲。虽然在爸爸这边，可只有爸爸的哥哥弟弟家的孩子才算“堂”。": {
+   "file": "dad/8ad667c31832",
+   "seconds": 12.82
+  },
+  "dad|你叫她表妹，她就叫你表哥。姨妈的女儿比你小，就是你的表妹。“堂”只在爸爸的兄弟家，其他都是“表”。": {
+   "file": "dad/67b64d6ed8ed",
+   "seconds": 10.06
+  },
+  "dad|你叫她伯母，她就叫你侄子。伯伯的老婆叫伯母，有的地方叫大妈、大娘。": {
+   "file": "dad/5731e7d00244",
+   "seconds": 7.85
+  },
+  "dad|你叫她姑姑，她就叫你侄子。爸爸的姐姐、妹妹都叫姑姑。比爸爸大的叫大姑，比爸爸小的叫小姑。": {
+   "file": "dad/e88fefefc0fd",
+   "seconds": 10.7
+  },
+  "dad|你叫她姑奶奶，她就叫你侄孙。爷爷的姐妹叫姑奶奶，南方叫姑婆。她是爸爸的姑姑，再往上一辈就是你的姑奶奶。": {
+   "file": "dad/4eeb698c5439",
+   "seconds": 11.83
+  },
+  "dad|你叫她舅妈，她就叫你外甥。舅舅的老婆叫舅妈：舅舅的“舅”，后面加一个“妈”字。": {
+   "file": "dad/acbe127dc744",
+   "seconds": 7.87
+  },
+  "dad|你叫她奶奶，她就叫你孙子。爸爸的妈妈叫奶奶。奶奶就是爸爸小时候天天喊的“妈”。": {
+   "file": "dad/b64d8def5ba1",
+   "seconds": 9.1
+  },
+  "dad|你叫她婶婶，她就叫你侄子。叔叔的老婆叫婶婶。伯伯配伯母，叔叔配婶婶。": {
+   "file": "dad/2311be67020e",
+   "seconds": 8.57
+  },
+  "dad|你叫她太奶奶，她就叫你曾孙。爷爷的妈妈叫太奶奶。比爷爷奶奶再高一辈，就在前面加一个“太”字。": {
+   "file": "dad/cea2d1328800",
+   "seconds": 10.18
+  },
+  "dad|你叫她堂妹，她就叫你堂哥。叔叔的女儿比你小，就是你的堂妹。只有爸爸的哥哥弟弟家的孩子，才叫“堂”。": {
+   "file": "dad/90e1e558a97d",
+   "seconds": 10.44
+  },
+  "dad|你叫她外婆，她就叫你外孙。妈妈的妈妈叫外婆，北方叫姥姥。你是外婆的外孙或者外孙女。": {
+   "file": "dad/35b626f0d13d",
+   "seconds": 9.77
+  },
+  "dad|你叫她外甥女，她就叫你小舅。姐姐的孩子叫外甥、外甥女。你是她妈妈的弟弟妹妹，所以她叫你小舅或者小姨。": {
+   "file": "dad/4e0d6b0d5eed",
+   "seconds": 11.64
+  },
+  "dad|你叫她姨妈，她就叫你外甥。妈妈的姐姐、妹妹都是“姨”。比妈妈大的叫大姨、姨妈，比妈妈小的叫小姨。": {
+   "file": "dad/04d3146dcc8e",
+   "seconds": 11.42
+  },
+  "dad|你叫她姨婆，她就叫你甥外孙。外婆的姐妹，是妈妈的姨妈。你叫她姨婆，北方叫姨姥姥。": {
+   "file": "dad/ddd5c9a80b55",
+   "seconds": 9.74
+  },
+  "dad|排得整整齐齐！谁是哪一辈，你分得清清楚楚。": {
+   "file": "dad/76445cb9cd12",
+   "seconds": 5.74
+  },
+  "dad|认亲戚都是从你开始，一步一步往外找。先点爸爸或者妈妈，再往上找爷爷外婆，往旁边找伯伯舅舅。": {
+   "file": "dad/46e7d2e111f0",
+   "seconds": 10.39
+  },
+  "dad|嫂子就是哥哥的老婆，和你是一辈的。": {
+   "file": "dad/9028e8e734b1",
+   "seconds": 3.96
+  },
+  "dad|谁是你的表弟？": {
+   "file": "dad/0b2e2dffc74b",
+   "seconds": 2.28
+  },
+  "dad|谁是你的表姐？": {
+   "file": "dad/db671893ab7b",
+   "seconds": 2.28
+  },
+  "dad|谁是你的表妹？": {
+   "file": "dad/aae6491aa635",
+   "seconds": 2.14
+  },
+  "dad|谁是你的伯伯？": {
+   "file": "dad/d9ce9fca3526",
+   "seconds": 2.3
+  },
+  "dad|谁是你的伯母？": {
+   "file": "dad/fa3f575c76c9",
+   "seconds": 2.16
+  },
+  "dad|谁是你的大爷爷？": {
+   "file": "dad/6acd69f52352",
+   "seconds": 2.4
+  },
+  "dad|谁是你的姑父？": {
+   "file": "dad/358264daceee",
+   "seconds": 2.26
+  },
+  "dad|谁是你的姑姑？": {
+   "file": "dad/e7e33cdad541",
+   "seconds": 2.26
+  },
+  "dad|谁是你的姑奶奶？": {
+   "file": "dad/6bc7645171f6",
+   "seconds": 2.23
+  },
+  "dad|谁是你的姐夫？": {
+   "file": "dad/0da853645242",
+   "seconds": 2.28
+  },
+  "dad|谁是你的舅公？": {
+   "file": "dad/af12a49f65da",
+   "seconds": 2.26
+  },
+  "dad|谁是你的舅舅？": {
+   "file": "dad/58420f4f22e2",
+   "seconds": 2.28
+  },
+  "dad|谁是你的舅妈？": {
+   "file": "dad/9479ff11ab12",
+   "seconds": 2.21
+  },
+  "dad|谁是你的舅爷爷？": {
+   "file": "dad/2e21ef3fd1a4",
+   "seconds": 2.42
+  },
+  "dad|谁是你的奶奶？": {
+   "file": "dad/d3222482c18a",
+   "seconds": 2.11
+  },
+  "dad|谁是你的嫂子？": {
+   "file": "dad/a5edf5887480",
+   "seconds": 2.26
+  },
+  "dad|谁是你的婶婶？": {
+   "file": "dad/165063cecf64",
+   "seconds": 2.26
+  },
+  "dad|谁是你的叔叔？": {
+   "file": "dad/8c979b2e6661",
+   "seconds": 2.28
+  },
+  "dad|谁是你的太奶奶？": {
+   "file": "dad/c13002df6d56",
+   "seconds": 2.33
+  },
+  "dad|谁是你的太爷爷？": {
+   "file": "dad/35fe4e5ed224",
+   "seconds": 2.33
+  },
+  "dad|谁是你的堂哥？": {
+   "file": "dad/72137eaf58df",
+   "seconds": 2.23
+  },
+  "dad|谁是你的堂妹？": {
+   "file": "dad/e63dc4db0206",
+   "seconds": 2.21
+  },
+  "dad|谁是你的外公？": {
+   "file": "dad/9441d1ff23d0",
+   "seconds": 2.18
+  },
+  "dad|谁是你的外婆？": {
+   "file": "dad/fe89dcbc3b3d",
+   "seconds": 2.28
+  },
+  "dad|谁是你的外甥女？": {
+   "file": "dad/55526df6852b",
+   "seconds": 2.35
+  },
+  "dad|谁是你的爷爷？": {
+   "file": "dad/ccb1ff70ce66",
+   "seconds": 2.16
+  },
+  "dad|谁是你的姨父？": {
+   "file": "dad/90e3c8d61964",
+   "seconds": 2.14
+  },
+  "dad|谁是你的姨妈？": {
+   "file": "dad/ed0b1150081e",
+   "seconds": 2.18
+  },
+  "dad|谁是你的姨婆？": {
+   "file": "dad/b2ae0e56aa0f",
+   "seconds": 2.28
+  },
+  "dad|谁是你的侄子？": {
+   "file": "dad/4948939b7b52",
+   "seconds": 2.21
+  },
+  "dad|婶婶叫你什么？": {
+   "file": "dad/41a7a1b44f87",
+   "seconds": 2.14
+  },
+  "dad|婶婶就是爸爸的弟弟的老婆，是爸爸妈妈那一辈的。": {
+   "file": "dad/ac892f367625",
+   "seconds": 4.7
+  },
+  "dad|婶婶是爸爸家的亲戚：婶婶就是爸爸的弟弟的老婆。": {
+   "file": "dad/12684d212649",
+   "seconds": 5.16
+  },
+  "dad|叔叔的老婆叫婶婶。伯伯配伯母，叔叔配婶婶。": {
+   "file": "dad/6fb448c976be",
+   "seconds": 5.42
+  },
+  "dad|叔叔的女儿比你小，就是你的堂妹。只有爸爸的哥哥弟弟家的孩子，才叫“堂”。": {
+   "file": "dad/06d0b8ae8bca",
+   "seconds": 7.44
+  },
+  "dad|叔叔叫你什么？": {
+   "file": "dad/d61ad351d51c",
+   "seconds": 2.04
+  },
+  "dad|叔叔就是爸爸的弟弟，是爸爸妈妈那一辈的。": {
+   "file": "dad/00039c747b17",
+   "seconds": 4.3
+  },
+  "dad|叔叔是爸爸家的亲戚：叔叔就是爸爸的弟弟。": {
+   "file": "dad/13c2207e45a9",
+   "seconds": 4.73
+  },
+  "dad|太厉害了！爸爸家、妈妈家，你一眼就分出来。": {
+   "file": "dad/52049461b37d",
+   "seconds": 5.42
+  },
+  "dad|太厉害了！过年见到亲戚，你一定叫得又快又准。": {
+   "file": "dad/f3daeeeb0223",
+   "seconds": 5.66
+  },
+  "dad|太奶奶叫你什么？": {
+   "file": "dad/63ffbdb0cbb6",
+   "seconds": 2.18
+  },
+  "dad|太奶奶就是爸爸的爸爸的妈妈，是太爷爷太奶奶那一辈的。": {
+   "file": "dad/f61ff3278b54",
+   "seconds": 5.3
+  },
+  "dad|太奶奶是爸爸家的亲戚：太奶奶就是爸爸的爸爸的妈妈。": {
+   "file": "dad/29af5a4b2e24",
+   "seconds": 5.3
+  },
+  "dad|太爷爷叫你什么？": {
+   "file": "dad/ba8f6323802a",
+   "seconds": 2.14
+  },
+  "dad|太爷爷就是爸爸的爸爸的爸爸，是太爷爷太奶奶那一辈的。": {
+   "file": "dad/41f6df72c932",
+   "seconds": 5.18
+  },
+  "dad|太爷爷是爸爸家的亲戚：太爷爷就是爸爸的爸爸的爸爸。": {
+   "file": "dad/eac62e6b4a17",
+   "seconds": 5.23
+  },
+  "dad|堂哥叫你什么？": {
+   "file": "dad/7efe91e921da",
+   "seconds": 2.11
+  },
+  "dad|堂哥就是爸爸的哥哥的儿子，和你是一辈的。": {
+   "file": "dad/f70ee269c843",
+   "seconds": 4.06
+  },
+  "dad|堂哥是爸爸家的亲戚：堂哥就是爸爸的哥哥的儿子。": {
+   "file": "dad/0fe0997e6a78",
+   "seconds": 5.02
+  },
+  "dad|堂妹叫你什么？": {
+   "file": "dad/a4144334bbcd",
+   "seconds": 2.06
+  },
+  "dad|堂妹就是爸爸的弟弟的女儿，和你是一辈的。": {
+   "file": "dad/7001e1a7ca61",
+   "seconds": 4.34
+  },
+  "dad|堂妹是爸爸家的亲戚：堂妹就是爸爸的弟弟的女儿。": {
+   "file": "dad/35ead756c67e",
+   "seconds": 5.11
+  },
+  "dad|堂只有一种。只有伯伯、叔叔家的孩子是堂哥堂姐；姑姑、舅舅、姨妈家的孩子，都是表哥表姐。": {
+   "file": "dad/0b33660d744d",
+   "seconds": 10.68
+  },
+  "dad|外公叫你什么？": {
+   "file": "dad/c8cb69cd1e38",
+   "seconds": 2.11
+  },
+  "dad|外公就是妈妈的爸爸，是爷爷奶奶那一辈的。": {
+   "file": "dad/c3bd8c3a4ca4",
+   "seconds": 4.34
+  },
+  "dad|外公是妈妈家的亲戚：外公就是妈妈的爸爸。": {
+   "file": "dad/0981e648d110",
+   "seconds": 4.58
+  },
+  "dad|外婆的哥哥弟弟，是妈妈的舅舅。你叫他舅公，北方叫舅姥爷。": {
+   "file": "dad/3383838edf93",
+   "seconds": 6.74
+  },
+  "dad|外婆的姐妹，是妈妈的姨妈。你叫她姨婆，北方叫姨姥姥。": {
+   "file": "dad/10bea0464a08",
+   "seconds": 6.41
+  },
+  "dad|外婆叫你什么？": {
+   "file": "dad/2663c75ac287",
+   "seconds": 2.06
+  },
+  "dad|外婆就是妈妈的妈妈，是爷爷奶奶那一辈的。": {
+   "file": "dad/ae793bc3c050",
+   "seconds": 4.39
+  },
+  "dad|外婆是妈妈家的亲戚：外婆就是妈妈的妈妈。": {
+   "file": "dad/78089c35a003",
+   "seconds": 4.66
+  },
+  "dad|外甥女叫你什么？": {
+   "file": "dad/32d4299e57fa",
+   "seconds": 2.26
+  },
+  "dad|外甥女就是姐姐的女儿，比你小一辈。": {
+   "file": "dad/9d1a39541a6f",
+   "seconds": 3.89
+  },
+  "dad|往上一辈加个字。爷爷的爸爸是太爷爷；爷爷的哥哥是大爷爷；外婆的哥哥是舅公。": {
+   "file": "dad/a38929e17831",
+   "seconds": 8.66
+  },
+  "dad|我就是你爸爸！在爷爷奶奶眼里，我是他们的儿子。": {
+   "file": "dad/df2db765a822",
+   "seconds": 5.42
+  },
+  "dad|先挂一节车厢吧！比如点“妈妈”，再点“哥哥”，看看妈妈的哥哥叫什么。": {
+   "file": "dad/c277efab42e0",
+   "seconds": 7.1
+  },
+  "dad|爷爷的爸爸叫太爷爷，书上写作曾祖父。你是他的曾孙或者曾孙女。": {
+   "file": "dad/75d65a987f08",
+   "seconds": 7.42
+  },
+  "dad|爷爷的哥哥叫大爷爷，有的地方叫伯公。就像爸爸的哥哥叫伯伯，再往上一辈就成了“伯公”。": {
+   "file": "dad/8dfd934b1d6c",
+   "seconds": 9
+  },
+  "dad|爷爷的姐妹叫姑奶奶，南方叫姑婆。她是爸爸的姑姑，再往上一辈就是你的姑奶奶。": {
+   "file": "dad/9ad582deaafc",
+   "seconds": 8.59
+  },
+  "dad|爷爷的妈妈叫太奶奶。比爷爷奶奶再高一辈，就在前面加一个“太”字。": {
+   "file": "dad/4b2a0ba85753",
+   "seconds": 6.86
+  },
+  "dad|爷爷叫你什么？": {
+   "file": "dad/d4a9c488296d",
+   "seconds": 1.99
+  },
+  "dad|爷爷就是爸爸的爸爸，是爷爷奶奶那一辈的。": {
+   "file": "dad/5d9cf73e75a2",
+   "seconds": 4.22
+  },
+  "dad|爷爷是爸爸家的亲戚：爷爷就是爸爸的爸爸。": {
+   "file": "dad/a59067f31892",
+   "seconds": 4.37
+  },
+  "dad|姨父叫你什么？": {
+   "file": "dad/821ab4169215",
+   "seconds": 1.99
+  },
+  "dad|姨父就是妈妈的姐姐的老公，是爸爸妈妈那一辈的。": {
+   "file": "dad/7861ba0b39f6",
+   "seconds": 4.58
+  },
+  "dad|姨父是妈妈家的亲戚：姨父就是妈妈的姐姐的老公。": {
+   "file": "dad/c28309961350",
+   "seconds": 4.63
+  },
+  "dad|姨妈的老公叫姨父。和姑父一样，在“姨”后面加一个“父”字。": {
+   "file": "dad/e2c1844688c2",
+   "seconds": 6.12
+  },
+  "dad|姨妈的女儿比你小，就是你的表妹。“堂”只在爸爸的兄弟家，其他都是“表”。": {
+   "file": "dad/4df2bb9fc46a",
+   "seconds": 7.08
+  },
+  "dad|姨妈叫你什么？": {
+   "file": "dad/56ea518cf04c",
+   "seconds": 1.99
+  },
+  "dad|姨妈就是妈妈的姐姐，是爸爸妈妈那一辈的。": {
+   "file": "dad/4bdfc683f54b",
+   "seconds": 4.13
+  },
+  "dad|姨妈是妈妈家的亲戚：姨妈就是妈妈的姐姐。": {
+   "file": "dad/3978fb7102c2",
+   "seconds": 4.34
+  },
+  "dad|姨婆叫你什么？": {
+   "file": "dad/c438b9e49d67",
+   "seconds": 2.06
+  },
+  "dad|姨婆就是妈妈的妈妈的妹妹，是爷爷奶奶那一辈的。": {
+   "file": "dad/fcd065ed3dcc",
+   "seconds": 4.68
+  },
+  "dad|姨婆是妈妈家的亲戚：姨婆就是妈妈的妈妈的妹妹。": {
+   "file": "dad/22d6033dfbce",
+   "seconds": 4.8
+  },
+  "dad|有！拜年、排辈分、分两家、翻牌配对，下面随便挑。": {
+   "file": "dad/27ce721f1229",
+   "seconds": 7.49
+  },
+  "dad|在外公外婆眼里，妈妈是他们的女儿。": {
+   "file": "dad/a8748466fefa",
+   "seconds": 3.98
+  },
+  "dad|这个问题问得好，看看下面爸爸的口诀。": {
+   "file": "dad/362a4109b34a",
+   "seconds": 4.1
+  },
+  "dad|这些亲戚是爸爸家的，还是妈妈家的？想想是从爸爸连过来的，还是从妈妈连过来的。": {
+   "file": "dad/dd627516b5df",
+   "seconds": 8.33
+  },
+  "dad|侄子叫你什么？": {
+   "file": "dad/b3044ca23f5a",
+   "seconds": 2.06
+  },
+  "dad|侄子就是哥哥的儿子，比你小一辈。": {
+   "file": "dad/af7bfd221a23",
+   "seconds": 3.77
+  },
+  "nian|爸爸": {
+   "file": "nian/2d0c0dabd075",
+   "seconds": 1.87
+  },
+  "nian|爸爸，过年家里来了好多人，我都不知道该怎么叫！": {
+   "file": "nian/29811893406d",
+   "seconds": 5.14
+  },
+  "nian|表弟": {
+   "file": "nian/4de130422657",
+   "seconds": 1.87
+  },
+  "nian|表弟，过年好！": {
+   "file": "nian/843ac07bf27b",
+   "seconds": 2.45
+  },
+  "nian|表哥，或者表弟": {
+   "file": "nian/39016fb479fd",
+   "seconds": 2.59
+  },
+  "nian|表姐": {
+   "file": "nian/a39372106418",
+   "seconds": 1.87
+  },
+  "nian|表姐，过年好！": {
+   "file": "nian/56a8ea4f3190",
+   "seconds": 2.47
+  },
+  "nian|表姐，或者表妹": {
+   "file": "nian/879d14cf06a5",
+   "seconds": 2.59
+  },
+  "nian|表妹": {
+   "file": "nian/880be6661478",
+   "seconds": 1.87
+  },
+  "nian|表妹，过年好！": {
+   "file": "nian/0797e8272b35",
+   "seconds": 2.42
+  },
+  "nian|伯伯": {
+   "file": "nian/795ea8ccdedc",
+   "seconds": 1.87
+  },
+  "nian|伯伯，过年好！": {
+   "file": "nian/a91e2ac29dc1",
+   "seconds": 2.35
+  },
+  "nian|伯伯，或者叔叔，或者爸爸": {
+   "file": "nian/11b6ec60896a",
+   "seconds": 3.6
+  },
+  "nian|伯母": {
+   "file": "nian/2de620cfe56e",
+   "seconds": 1.87
+  },
+  "nian|伯母，过年好！": {
+   "file": "nian/06be873acdd1",
+   "seconds": 2.4
+  },
+  "nian|伯外公": {
+   "file": "nian/722042592667",
+   "seconds": 1.87
+  },
+  "nian|曾外祖父": {
+   "file": "nian/4c0438f2eb56",
+   "seconds": 1.94
+  },
+  "nian|曾外祖母": {
+   "file": "nian/8eba3556944e",
+   "seconds": 1.9
+  },
+  "nian|答对啦！": {
+   "file": "nian/b5658720945d",
+   "seconds": 1.87
+  },
+  "nian|大姑": {
+   "file": "nian/7618fcdf08da",
+   "seconds": 1.87
+  },
+  "nian|大舅": {
+   "file": "nian/8912db898d4b",
+   "seconds": 1.87
+  },
+  "nian|大爷爷": {
+   "file": "nian/f81de548fd88",
+   "seconds": 1.87
+  },
+  "nian|大爷爷，过年好！": {
+   "file": "nian/c47204145e38",
+   "seconds": 2.62
+  },
+  "nian|大姨": {
+   "file": "nian/4ff1ece5a1c6",
+   "seconds": 1.87
+  },
+  "nian|弟弟": {
+   "file": "nian/80d21c70119c",
+   "seconds": 1.87
+  },
+  "nian|弟妹": {
+   "file": "nian/3997722a7fe0",
+   "seconds": 1.87
+  },
+  "nian|哥哥": {
+   "file": "nian/f49b2a9ed3ed",
+   "seconds": 1.87
+  },
+  "nian|哥哥，或者弟弟，或者你自己": {
+   "file": "nian/e0f2d382385b",
+   "seconds": 3.79
+  },
+  "nian|姑父": {
+   "file": "nian/b87dc6f93fb8",
+   "seconds": 1.87
+  },
+  "nian|姑父，过年好！": {
+   "file": "nian/636471e1028d",
+   "seconds": 2.4
+  },
+  "nian|姑姑": {
+   "file": "nian/ad0251732f14",
+   "seconds": 1.87
+  },
+  "nian|姑姑，过年好！": {
+   "file": "nian/dceaf3681ec0",
+   "seconds": 2.38
+  },
+  "nian|姑奶奶": {
+   "file": "nian/e13b34f70188",
+   "seconds": 1.87
+  },
+  "nian|姑奶奶，过年好！": {
+   "file": "nian/e4a0a0c29bf4",
+   "seconds": 2.62
+  },
+  "nian|姑外婆": {
+   "file": "nian/f3f327a0c6a9",
+   "seconds": 1.87
+  },
+  "nian|还有别的好玩的吗？": {
+   "file": "nian/19cb0fec8c26",
+   "seconds": 2.35
+  },
+  "nian|姐夫": {
+   "file": "nian/dfa3c49cf1d1",
+   "seconds": 1.87
+  },
+  "nian|姐夫，过年好！": {
+   "file": "nian/8296836ceef9",
+   "seconds": 2.5
+  },
+  "nian|姐夫，或者妹夫": {
+   "file": "nian/9411b51faf02",
+   "seconds": 2.57
+  },
+  "nian|姐姐": {
+   "file": "nian/05c2caa9f9ad",
+   "seconds": 1.87
+  },
+  "nian|姐姐，或者妹妹": {
+   "file": "nian/ad25bcbe543f",
+   "seconds": 2.47
+  },
+  "nian|舅公": {
+   "file": "nian/1efcb135d1cd",
+   "seconds": 1.87
+  },
+  "nian|舅公，过年好！": {
+   "file": "nian/49efed3f86cc",
+   "seconds": 2.45
+  },
+  "nian|舅舅": {
+   "file": "nian/71950ffe7551",
+   "seconds": 1.87
+  },
+  "nian|舅舅，过年好！": {
+   "file": "nian/29679a9ee5a4",
+   "seconds": 2.4
+  },
+  "nian|舅妈": {
+   "file": "nian/452781112bf1",
+   "seconds": 1.87
+  },
+  "nian|舅妈，过年好！": {
+   "file": "nian/5e67a274239a",
+   "seconds": 2.45
+  },
+  "nian|舅外公": {
+   "file": "nian/2db5ad6b22ff",
+   "seconds": 1.87
+  },
+  "nian|舅爷爷": {
+   "file": "nian/868ab75b7c8f",
+   "seconds": 1.87
+  },
+  "nian|舅爷爷，过年好！": {
+   "file": "nian/f63f28fe1a0f",
+   "seconds": 2.66
+  },
+  "nian|妈妈": {
+   "file": "nian/393443e7bfc5",
+   "seconds": 1.87
+  },
+  "nian|妈妈的哥哥叫什么呀？舅舅还是叔叔？": {
+   "file": "nian/63af1dcc30f4",
+   "seconds": 4.63
+  },
+  "nian|妹夫": {
+   "file": "nian/5a283065d32e",
+   "seconds": 1.87
+  },
+  "nian|妹妹": {
+   "file": "nian/da57641d1e9c",
+   "seconds": 1.87
+  },
+  "nian|那我能考考自己吗？": {
+   "file": "nian/f2100fe56766",
+   "seconds": 2.52
+  },
+  "nian|奶奶": {
+   "file": "nian/ad7f8f4429e1",
+   "seconds": 1.87
+  },
+  "nian|奶奶，过年好！": {
+   "file": "nian/61f8639b778b",
+   "seconds": 2.4
+  },
+  "nian|嫂子": {
+   "file": "nian/111c5ca45e3e",
+   "seconds": 1.87
+  },
+  "nian|嫂子，过年好！": {
+   "file": "nian/393495c5b255",
+   "seconds": 2.54
+  },
+  "nian|嫂子，或者弟妹，或者老婆": {
+   "file": "nian/7d40881169d4",
+   "seconds": 3.62
+  },
+  "nian|婶婶": {
+   "file": "nian/52746fc21d86",
+   "seconds": 1.87
+  },
+  "nian|婶婶，过年好！": {
+   "file": "nian/f6969c3b2f03",
+   "seconds": 2.54
+  },
+  "nian|甥女婿": {
+   "file": "nian/297c13edf062",
+   "seconds": 1.87
+  },
+  "nian|甥孙": {
+   "file": "nian/300cb2e694ed",
+   "seconds": 1.87
+  },
+  "nian|甥孙女": {
+   "file": "nian/24b460e16af0",
+   "seconds": 1.87
+  },
+  "nian|甥外孙": {
+   "file": "nian/39a40c68b5d6",
+   "seconds": 1.9
+  },
+  "nian|甥外孙女": {
+   "file": "nian/b5a3f29990b3",
+   "seconds": 1.92
+  },
+  "nian|甥媳妇": {
+   "file": "nian/76ac8eb1e3b4",
+   "seconds": 1.87
+  },
+  "nian|叔叔": {
+   "file": "nian/c23623ad7cb3",
+   "seconds": 1.87
+  },
+  "nian|叔叔，过年好！": {
+   "file": "nian/92981871a078",
+   "seconds": 2.42
+  },
+  "nian|叔外公": {
+   "file": "nian/0bbd176d1b3c",
+   "seconds": 1.87
+  },
+  "nian|太奶奶": {
+   "file": "nian/ac9c7ae498c8",
+   "seconds": 1.87
+  },
+  "nian|太奶奶，过年好！": {
+   "file": "nian/fa23b1065ae1",
+   "seconds": 2.64
+  },
+  "nian|太爷爷": {
+   "file": "nian/9cf165444ada",
+   "seconds": 1.87
+  },
+  "nian|太爷爷，过年好！": {
+   "file": "nian/14753e5d9d3e",
+   "seconds": 2.64
+  },
+  "nian|堂哥": {
+   "file": "nian/9f2fe2ad8213",
+   "seconds": 1.87
+  },
+  "nian|堂哥，过年好！": {
+   "file": "nian/8fcd9e215a9f",
+   "seconds": 2.5
+  },
+  "nian|堂哥，或者堂弟": {
+   "file": "nian/aec8b49e0041",
+   "seconds": 2.64
+  },
+  "nian|堂姐，或者堂妹": {
+   "file": "nian/af65d4c41b09",
+   "seconds": 2.66
+  },
+  "nian|堂妹": {
+   "file": "nian/14a6d283e64a",
+   "seconds": 1.87
+  },
+  "nian|堂妹，过年好！": {
+   "file": "nian/601431195847",
+   "seconds": 2.45
+  },
+  "nian|外曾外祖父": {
+   "file": "nian/ab01a0ac21c9",
+   "seconds": 2.14
+  },
+  "nian|外曾外祖母": {
+   "file": "nian/9f0be7647de2",
+   "seconds": 2.14
+  },
+  "nian|外曾祖父": {
+   "file": "nian/1e73f4769ca9",
+   "seconds": 2.02
+  },
+  "nian|外曾祖母": {
+   "file": "nian/3b2dc09d02b2",
+   "seconds": 1.99
+  },
+  "nian|外公": {
+   "file": "nian/f2c3a4f214e0",
+   "seconds": 1.87
+  },
+  "nian|外公，过年好！": {
+   "file": "nian/a17b89cc936d",
+   "seconds": 2.45
+  },
+  "nian|外婆": {
+   "file": "nian/8ce0c38b1be6",
+   "seconds": 1.87
+  },
+  "nian|外婆，过年好！": {
+   "file": "nian/2ef2b11b1cbf",
+   "seconds": 2.52
+  },
+  "nian|外甥": {
+   "file": "nian/8c710d6e9cab",
+   "seconds": 1.87
+  },
+  "nian|外甥女": {
+   "file": "nian/97908b541eaf",
+   "seconds": 1.87
+  },
+  "nian|外甥女，过年好！": {
+   "file": "nian/5b6362a21ff3",
+   "seconds": 2.62
+  },
+  "nian|为什么堂哥和表哥不一样？": {
+   "file": "nian/adf8dfa588a0",
+   "seconds": 3.02
+  },
+  "nian|小姑": {
+   "file": "nian/c181da4a5e87",
+   "seconds": 1.87
+  },
+  "nian|小舅": {
+   "file": "nian/8d3efcf0f840",
+   "seconds": 1.87
+  },
+  "nian|小舅爷": {
+   "file": "nian/7a022572ad32",
+   "seconds": 1.87
+  },
+  "nian|小爷爷": {
+   "file": "nian/d564b82f3de6",
+   "seconds": 1.87
+  },
+  "nian|小姨": {
+   "file": "nian/53b20a22938c",
+   "seconds": 1.87
+  },
+  "nian|兄弟眷父": {
+   "file": "nian/893407644278",
+   "seconds": 1.92
+  },
+  "nian|兄弟眷母": {
+   "file": "nian/cbbefe3ec97e",
+   "seconds": 1.92
+  },
+  "nian|兄弟眷兄弟": {
+   "file": "nian/7b90fb625f58",
+   "seconds": 2.09
+  },
+  "nian|兄弟眷姊妹": {
+   "file": "nian/48bde8479e30",
+   "seconds": 2.02
+  },
+  "nian|爷爷": {
+   "file": "nian/7c9200b28da9",
+   "seconds": 1.87
+  },
+  "nian|爷爷，过年好！": {
+   "file": "nian/fb0a490dbdcd",
+   "seconds": 2.4
+  },
+  "nian|姨父": {
+   "file": "nian/a07c3336178a",
+   "seconds": 1.87
+  },
+  "nian|姨父，过年好！": {
+   "file": "nian/5b83101f9e5b",
+   "seconds": 2.45
+  },
+  "nian|姨妈": {
+   "file": "nian/1dee9bd92f84",
+   "seconds": 1.87
+  },
+  "nian|姨妈，过年好！": {
+   "file": "nian/bb84f95cac98",
+   "seconds": 2.42
+  },
+  "nian|姨妈，或者妈妈": {
+   "file": "nian/a364e2c78f90",
+   "seconds": 2.54
+  },
+  "nian|姨奶奶": {
+   "file": "nian/db6969b4f775",
+   "seconds": 1.87
+  },
+  "nian|姨婆": {
+   "file": "nian/2ee056637b03",
+   "seconds": 1.87
+  },
+  "nian|姨婆，过年好！": {
+   "file": "nian/784fe666c79b",
+   "seconds": 2.45
+  },
+  "nian|姨外婆": {
+   "file": "nian/16238c5ad31a",
+   "seconds": 1.87
+  },
+  "nian|侄女": {
+   "file": "nian/88fbf237f0d3",
+   "seconds": 1.87
+  },
+  "nian|侄女，或者女儿": {
+   "file": "nian/989e4a2493c1",
+   "seconds": 2.52
+  },
+  "nian|侄女婿": {
+   "file": "nian/c2d100f42a49",
+   "seconds": 1.87
+  },
+  "nian|侄孙": {
+   "file": "nian/70742b57cf3b",
+   "seconds": 1.87
+  },
+  "nian|侄孙女": {
+   "file": "nian/5f3148eedef1",
+   "seconds": 1.87
+  },
+  "nian|侄外孙": {
+   "file": "nian/94a990eac61c",
+   "seconds": 1.87
+  },
+  "nian|侄外孙女": {
+   "file": "nian/bb34618d9cd9",
+   "seconds": 1.92
+  },
+  "nian|侄媳妇": {
+   "file": "nian/ba4fd4704e7c",
+   "seconds": 1.87
+  },
+  "nian|侄子": {
+   "file": "nian/a8471fe742db",
+   "seconds": 1.87
+  },
+  "nian|侄子，过年好！": {
+   "file": "nian/476f3f3087eb",
+   "seconds": 2.45
+  },
+  "nian|侄子，或者儿子": {
+   "file": "nian/e015e81c7609",
+   "seconds": 2.52
+  },
+  "nian|姊妹姻父": {
+   "file": "nian/81ced84f039e",
+   "seconds": 1.87
+  },
+  "nian|姊妹姻母": {
+   "file": "nian/8072ecae09c9",
+   "seconds": 1.87
+  },
+  "nian|姊妹姻兄弟": {
+   "file": "nian/01612c044f55",
+   "seconds": 2.02
+  },
+  "nian|姊妹姻姊妹": {
+   "file": "nian/162f49c682ee",
+   "seconds": 1.99
+  }
+ }
+}
