@@ -105,6 +105,8 @@ export function DoorPage({ settings, onBack, onTree, onFinish }: GameProps) {
               <button key={option} type="button" className={`option${state}`} disabled={!!picked && option !== picked && option !== guest.answer}
                 aria-pressed={picked === option} onClick={() => choose(option)}>
                 {option}
+                {state === " is-right" && <span aria-label="对"> ✓</span>}
+                {state === " is-wrong" && <span aria-label="错"> ✗</span>}
               </button>
             );
           })}

@@ -39,7 +39,7 @@ export const guessPool = relatives.filter((relative) => relative.level >= 2 && r
 export const ageWord = (relative: Relative) => (relative.age === "older" ? "比你大" : "比你小");
 
 export const guessPrompt = (relative: Relative) =>
-  `${stepsText(relative.steps)}${relative.age ? `（${ageWord(relative)}）` : ""}，你叫 TA 什么？`;
+  `${stepsText(relative.steps)}${relative.age ? `（${ageWord(relative)}）` : ""}，你叫${relative.male ? "他" : "她"}什么？`;
 
 /** 读出来时不说"TA"，免得念成两个字母。 */
 export const guessSpeech = (relative: Relative) =>

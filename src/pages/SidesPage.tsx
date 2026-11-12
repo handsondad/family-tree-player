@@ -24,6 +24,7 @@ export function SidesPage({ settings, onBack, onTree, onFinish }: GameProps) {
   const [streak, setStreak] = useState(0);
   const [wrong, setWrong] = useState<Side | null>(null);
   const later = useRef(0);
+  const feedbackRef = useRef<HTMLDivElement>(null);
   const card = cards[index];
   const score = sorted.filter((item) => item.right).length;
   const missed = sorted.filter((item) => !item.right).map((item) => item.relative);
@@ -63,6 +64,7 @@ export function SidesPage({ settings, onBack, onTree, onFinish }: GameProps) {
     if (right) later.current = window.setTimeout(() => next(score + 1), 600);
     else {
       setWrong(side);
+      window.requestAnimationFrame(() => feedbackRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" }));
       if (settings.sound) later.current = window.setTimeout(() => say(dad(sideExplain(card))), 350);
     }
   }
@@ -105,7 +107,11 @@ export function SidesPage({ settings, onBack, onTree, onFinish }: GameProps) {
       <div className="sides">
         {bins.map(({ side, emoji, label }, i) => {
           const pile = sorted.filter((item) => item.relative.side === side);
-          const state = wrong === null ? "" : side === card.side ? " is-hint" : side === wrong ? " is-wrong" : "";
+          const state = !waiting
+            ? ""
+            : wrong === null
+              ? (side === card.side ? " is-right" : "")
+              : side === card.side ? " is-hint" : side === wrong ? " is-wrong" : "";
           return (
             <button key={side} type="button" className={`side-bin is-${side}${state}`} disabled={waiting} onClick={() => pick(side)}
               style={{ order: i === 0 ? 0 : 2 }}>
@@ -130,7 +136,7 @@ export function SidesPage({ settings, onBack, onTree, onFinish }: GameProps) {
       </div>
 
       {wrong !== null && (
-        <div className="feedback sides-feedback">
+        <div ref={feedbackRef} className="feedback sides-feedback">
           <DadSays>{sideExplain(card)}</DadSays>
           <button type="button" className="primary-btn" onClick={() => next()} autoFocus>下一位 →</button>
         </div>

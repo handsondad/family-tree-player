@@ -107,8 +107,12 @@ export function QuizPlay({ level, settings, onBack, onAgain, onNext, onTree, onF
             </div>
           )}
           <div className="done-actions">
-            <button type="button" className="pill-btn" onClick={onAgain}>🔁 再玩一次</button>
-            {nextLevel && <button type="button" className="primary-btn" onClick={() => onNext(nextLevel.level)}>下一关：{nextLevel.title} →</button>}
+            <button type="button" className={nextLevel ? "pill-btn" : "primary-btn"} onClick={onAgain}>🔁 再玩一次</button>
+            {nextLevel ? (
+              <button type="button" className="primary-btn" onClick={() => onNext(nextLevel.level)}>下一关：{nextLevel.title} →</button>
+            ) : (
+              <button type="button" className="pill-btn" onClick={onBack}>← 返回选关</button>
+            )}
           </div>
         </section>
       </div>
@@ -121,9 +125,17 @@ export function QuizPlay({ level, settings, onBack, onAgain, onNext, onTree, onF
       <TopBar emoji="🏆" title={`第 ${level} 关 · ${info.title}`} onBack={onBack} backLabel="选关" settings={settings} />
 
       <div className="quiz-progress" aria-label={`第 ${index + 1} 题，共 ${questions.length} 题`}>
-        {questions.map((item, i) => (
-          <span key={item.key} className={i < index ? (missed.some((m) => m.id === item.relative.id) ? "is-wrong" : "is-right") : i === index ? "is-now" : ""} />
-        ))}
+        <div className="quiz-dots" aria-hidden="true">
+          {questions.map((item, i) => {
+            const dotState = i < index
+              ? (missed.some((m) => m.id === item.relative.id) ? "is-wrong" : "is-right")
+              : i === index
+                ? (picked ? (right ? "is-right is-now" : "is-wrong is-now") : "is-now")
+                : "";
+            return <span key={item.key} className={dotState} />;
+          })}
+        </div>
+        <small aria-hidden="true">第 {index + 1} / {questions.length} 题</small>
       </div>
 
       <section className="card quiz-card" aria-labelledby="quiz-prompt">

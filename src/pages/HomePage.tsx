@@ -39,7 +39,7 @@ export function HomePage({ met, stars, best, onTree, onTrain, onGo }: Props) {
   const bestOf = (game: GameId) => (best[game] ? starRow(best[game]) : "还没玩过");
 
   const learn: Mode[] = [
-    { emoji: "🌳", title: "我家的家族树", hook: "点一点每个人，看看该怎么叫 TA、TA 又怎么叫你。", count: `认识了 ${known} / ${total} 位亲戚`, color: "#6bcb77", onClick: onTree },
+    { emoji: "🌳", title: "我家的家族树", hook: "点一点每个人，看看该怎么叫，对方又怎么叫你。", count: `认识了 ${known} / ${total} 位亲戚`, color: "#6bcb77", onClick: onTree },
     { emoji: "🚂", title: "称呼小火车", hook: "“爸爸的妈妈的哥哥”是谁？一节一节挂上车厢就知道。", count: "随便拼，还能让小火车出题考你", color: "#4d96ff", onClick: onTrain }
   ];
   const play: Mode[] = [
@@ -60,13 +60,16 @@ export function HomePage({ met, stars, best, onTree, onTrain, onGo }: Props) {
       <section aria-labelledby="home-duo-title">
         <h2 id="home-duo-title" className="section-title">小念和爸爸</h2>
         <div className="duo">
-          <button type="button" className={`duo-bubble is-nian${isSpeaking(speaking, "nian", nianLine) ? " is-speaking" : ""}`} onClick={talk}><b>小念</b>{nianLine}</button>
-          <button type="button" className={`duo-bubble is-dad${isSpeaking(speaking, "dad", dadLine) ? " is-speaking" : ""}`} onClick={talk}><b>爸爸</b>{dadLine}</button>
+          <button key={`nian-${chat}`} type="button" className={`duo-bubble is-nian${isSpeaking(speaking, "nian", nianLine) ? " is-speaking" : ""}`} onClick={talk}><b>小念</b>{nianLine}</button>
+          <button key={`dad-${chat}`} type="button" className={`duo-bubble is-dad${isSpeaking(speaking, "dad", dadLine) ? " is-speaking" : ""}`} onClick={talk}><b>爸爸</b>{dadLine}</button>
           <button type="button" className="duo-people" onClick={talk} aria-label="点一下，小念和爸爸接着聊">
             <span className="duo-dad"><Avatar who="dad" /></span>
             <span className="duo-nian"><Avatar who="nian" /></span>
           </button>
-          <span className="duo-hint" aria-hidden="true">点他们，接着聊 👆</span>
+          <button type="button" className="duo-hint" onClick={talk} tabIndex={-1} aria-hidden="true">
+            <span className="duo-dots">{chats.map((_, i) => <i key={i} className={i === chat ? "is-on" : ""} />)}</span>
+            点他们，接着聊 👆
+          </button>
         </div>
       </section>
 
@@ -97,15 +100,20 @@ function Modes({ id, title, modes }: { id: string; title: string; modes: readonl
   return (
     <section aria-labelledby={id}>
       <h2 id={id} className="section-title">{title}</h2>
-      <div className="modes">
-        {modes.map((mode) => (
-          <button key={mode.title} type="button" className="mode-card" style={{ "--bubble": mode.color } as CSSProperties} onClick={mode.onClick}>
-            <span className="mode-emoji" aria-hidden="true">{mode.emoji}</span>
-            <strong>{mode.title}</strong>
-            <small>{mode.hook}</small>
-            <span className="mode-count">{mode.count} →</span>
-          </button>
-        ))}
+      <div className={`modes${modes.length === 2 ? " is-two" : ""}`}>
+        {modes.map((mode) => {
+          const hasStars = mode.count.includes("⭐") || mode.count.includes("☆");
+          return (
+            <button key={mode.title} type="button" className="mode-card" style={{ "--bubble": mode.color } as CSSProperties} onClick={mode.onClick}>
+              <span className="mode-emoji" aria-hidden="true">{mode.emoji}</span>
+              <strong>{mode.title}</strong>
+              <small>{mode.hook}</small>
+              <span className={`mode-count${hasStars && !mode.count.includes("/") ? " is-stars" : ""}`}>
+                <span>{mode.count}</span> <i aria-hidden="true">→</i>
+              </span>
+            </button>
+          );
+        })}
       </div>
     </section>
   );

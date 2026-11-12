@@ -72,6 +72,7 @@ export function MatchPage({ settings, onBack, onTree, onFinish }: GameProps) {
     );
   }
 
+  const mismatch = open.length === 2 && deck[open[0]].relative.id !== deck[open[1]].relative.id;
   return (
     <div className="page game-page">
       {top}
@@ -81,10 +82,12 @@ export function MatchPage({ settings, onBack, onTree, onFinish }: GameProps) {
       </p>
       <div className="match-grid">
         {deck.map((card, i) => {
-          const shown = open.includes(i) || matched.has(card.relative.id);
+          const isOpen = open.includes(i);
           const pairDone = matched.has(card.relative.id);
+          const shown = isOpen || pairDone;
           return (
-            <button key={card.key} type="button" className={`match-card${shown ? " is-open" : ""}${pairDone ? " is-done" : ""}`}
+            <button key={card.key} type="button"
+              className={`match-card${shown ? " is-open" : ""}${pairDone ? " is-done" : ""}${isOpen && mismatch ? " is-mismatch" : ""}`}
               aria-label={shown ? faceLabel(card) : "一张还没翻开的牌"} onClick={() => flip(i)}>
               <span className="match-inner">
                 <span className="match-back" aria-hidden="true">🌳</span>

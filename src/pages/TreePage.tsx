@@ -24,6 +24,16 @@ const couples = [[230, 340, 80], [660, 770, 80], [390, 610, 280]] as const;
 
 const inTree = new Set(nodes.map((node) => node.id));
 
+/** 树上没画出来的亲戚，找到离他最近、画在树上的那个人。 */
+function anchorNodeId(id: string, relative: Relative | undefined): string {
+  if (inTree.has(id) || !relative) return inTree.has(id) ? id : "me";
+  for (let i = relative.steps.length - 1; i >= 1; i--) {
+    const stop = relativeBySteps(relative.steps.slice(0, i));
+    if (stop && inTree.has(stop.id)) return stop.id;
+  }
+  return "me";
+}
+
 /** 从我走到 TA，路上经过的人，按第几步编号。 */
 function pathOf(relative: Relative | undefined): Map<string, number> {
   const path = new Map<string, number>();
@@ -58,11 +68,20 @@ export function TreePage({ initialId, settings, met, onMeet, onBack, onTrain }: 
   const known = relatives.filter((item) => met.includes(item.id)).length;
   const shown = (id: string) => !hide || revealed.includes(id);
 
+  const anchorId = anchorNodeId(selected, relative);
+  const firstRender = useRef(true);
+
   useEffect(() => {
     const el = scrollRef.current;
-    const focus = nodes.find((node) => node.id === selected) ?? nodes.find((node) => node.id === "me")!;
-    if (el) el.scrollLeft = (focus.x / 1000) * el.scrollWidth - el.clientWidth / 2;
-  }, []);
+    const focus = nodes.find((node) => node.id === anchorId) ?? nodes.find((node) => node.id === "me")!;
+    if (el) {
+      el.scrollTo({
+        left: (focus.x / 1000) * el.scrollWidth - el.clientWidth / 2,
+        behavior: firstRender.current ? "instant" : "smooth"
+      });
+    }
+    firstRender.current = false;
+  }, [anchorId]);
 
   useEffect(() => {
     if (relative && !hide) onMeet(relative.id);
@@ -91,11 +110,16 @@ export function TreePage({ initialId, settings, met, onMeet, onBack, onTrain }: 
       <TopBar emoji="🌳" title="我家的家族树" onBack={onBack} settings={settings} />
 
       <div className="intro">
-        <p><span aria-hidden="true">👆</span>这是一个大家族的样子。点任何一个人，看看该怎么叫 TA。</p>
-        <p><span aria-hidden="true">⭐</span>你已经认识了 <b>{known} / {relatives.length}</b> 位亲戚，树上没画出来的，可以从卡片里的“TA 的家人”找到。</p>
-        <button type="button" className="pill-btn" aria-pressed={hide} onClick={toggleHide}>
-          {hide ? "🙉 把名字露出来" : "🙈 把名字藏起来，考考我"}
-        </button>
+        <p><span aria-hidden="true">👆</span>这是一个大家族的样子。点任何一个人，看看该怎么叫。</p>
+        <p><span aria-hidden="true">⭐</span>你已经认识了 <b>{known} / {relatives.length}</b> 位亲戚，树上没画出来的，可以从卡片里的“家人”找到。</p>
+        <div className="intro-bar">
+          <div className="progress-track" aria-hidden="true">
+            <span style={{ width: `${(known / relatives.length) * 100}%` }} />
+          </div>
+          <button type="button" className="pill-btn" aria-pressed={hide} onClick={toggleHide}>
+            {hide ? "🙉 把名字露出来" : "🙈 把名字藏起来，考考我"}
+          </button>
+        </div>
       </div>
 
       <div className="tree-layout">
@@ -110,6 +134,7 @@ export function TreePage({ initialId, settings, met, onMeet, onBack, onTrain }: 
               {couples.map(([a, b, y]) => (
                 <g key={`${a}-${b}`}>
                   <path className="tree-couple" d={`M${a} ${y} H${b}`} />
+                  <circle cx={(a + b) / 2} cy={y} r="14" fill="#fff" />
                   <text className="tree-heart" x={(a + b) / 2} y={y + 7} textAnchor="middle">❤</text>
                 </g>
               ))}
@@ -118,10 +143,11 @@ export function TreePage({ initialId, settings, met, onMeet, onBack, onTrain }: 
               const item = relativeById(node.id);
               const isMe = node.id === "me";
               const step = path.get(node.id);
+              const isBranch = !inTree.has(selected) && anchorId === node.id;
               const label = isMe ? "我" : shown(node.id) ? item!.call : "？";
               return (
                 <button key={node.id} type="button"
-                  className={`tree-node${selected === node.id ? " is-selected" : ""}${step ? " is-path" : ""}`}
+                  className={`tree-node${selected === node.id ? " is-selected" : ""}${isBranch ? " is-branch" : ""}${step ? " is-path" : ""}`}
                   style={{ left: `${node.x / 10}%`, top: `${(node.y / 580) * 100}%` }}
                   aria-pressed={selected === node.id} aria-label={isMe ? "我自己" : shown(node.id) ? item!.call : "一位还没揭晓的亲戚"}
                   onClick={() => pick(node.id, true)}>
@@ -193,7 +219,7 @@ function RelativeCard({ relative, settings, hidden, hideAll, onReveal, onPick, o
         <span className="side-tag" data-side={relative.side}>{sideNames[relative.side]}</span>
       </div>
 
-      <ol className="rc-chain" aria-label="从你出发怎么找到 TA">
+      <ol className="rc-chain" aria-label="从你出发怎么找到这位亲戚">
         <li>我</li>
         {relative.steps.map((step, i) => <li key={i}>的{step}</li>)}
         {relative.age && <li className="is-note">{relative.age === "older" ? "比你大" : "比你小"}</li>}
@@ -210,7 +236,7 @@ function RelativeCard({ relative, settings, hidden, hideAll, onReveal, onPick, o
       {!inTree.has(relative.id) && parent && (
         <p className="rc-note">树上没画{relative.male ? "他" : "她"}，{relative.male ? "他" : "她"}是{parent.call}的{relative.steps[relative.steps.length - 1]}。</p>
       )}
-      <FamilyChips steps={relative.steps} onPick={onPick} parent={parent ?? (relative.steps.length === 1 ? "me" : undefined)} named={!hideAll} />
+      <FamilyChips steps={relative.steps} pronoun={relative.male ? "他" : "她"} onPick={onPick} parent={parent ?? (relative.steps.length === 1 ? "me" : undefined)} named={!hideAll} />
 
       <div className="rc-actions">
         <button type="button" className="pill-btn" onClick={() => onTrain(relative.steps)}>🚂 去小火车里拼一拼</button>
@@ -219,14 +245,14 @@ function RelativeCard({ relative, settings, hidden, hideAll, onReveal, onPick, o
   );
 }
 
-type ChipsProps = { steps: readonly Step[]; onPick: (id: string) => void; parent?: Relative | "me"; named: boolean };
+type ChipsProps = { steps: readonly Step[]; pronoun?: "他" | "她"; onPick: (id: string) => void; parent?: Relative | "me"; named: boolean };
 
-function FamilyChips({ steps, onPick, parent, named }: ChipsProps) {
+function FamilyChips({ steps, pronoun = "他", onPick, parent, named }: ChipsProps) {
   const family = familyOf(steps);
   if (!family.length && !parent) return null;
   return (
     <div className="rc-family">
-      <h3>{steps.length ? "TA 的家人" : "你的家人"}</h3>
+      <h3>{steps.length ? `${pronoun}的家人` : "你的家人"}</h3>
       <div className="chips">
         {parent && (
           <button type="button" onClick={() => onPick(parent === "me" ? "me" : parent.id)}>
@@ -235,7 +261,7 @@ function FamilyChips({ steps, onPick, parent, named }: ChipsProps) {
         )}
         {family.map((other) => (
           <button key={other.id} type="button" onClick={() => onPick(other.id)}>
-            <span aria-hidden="true">{other.emoji}</span> {steps.length ? "TA" : "我"}的{other.steps[other.steps.length - 1]}
+            <span aria-hidden="true">{other.emoji}</span> {steps.length ? pronoun : "我"}的{other.steps[other.steps.length - 1]}
             {named && <b> · {other.call}</b>}
           </button>
         ))}

@@ -108,7 +108,11 @@ export function RowsPage({ settings, onBack, onTree, onFinish }: GameProps) {
         <div className="rows" role="group" aria-label="辈分">
           {genRows.map(({ gen, label, emoji }) => {
             const here = placed.filter((item) => item.relative.gen === gen);
-            const state = wrongGen === null ? "" : gen === card.gen ? " is-hint" : gen === wrongGen ? " is-wrong" : "";
+            const state = !waiting
+              ? ""
+              : wrongGen === null
+                ? (gen === card.gen ? " is-right" : "")
+                : gen === card.gen ? " is-hint" : gen === wrongGen ? " is-wrong" : "";
             return (
               <button key={gen} type="button" className={`row${state}`} disabled={waiting} onClick={() => drop(gen)}>
                 <span className="row-label"><span aria-hidden="true">{emoji}</span>{label}</span>

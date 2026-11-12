@@ -206,7 +206,7 @@ export const sideNames: Record<Side, string> = { dad: "爸爸家", mom: "妈妈�
 export const levels = [
   { level: 1, title: "入门", emoji: "🌱", hook: "爷爷奶奶、外公外婆、伯伯舅舅", count: 6 },
   { level: 2, title: "进阶", emoji: "🌿", hook: "舅妈姑父、堂哥表妹，还有嫂子姐夫", count: 8 },
-  { level: 3, title: "挑战", emoji: "🌳", hook: "太爷爷、舅公，还要猜 TA 叫你什么", count: 8 }
+  { level: 3, title: "挑战", emoji: "🌳", hook: "太爷爷、舅公，还要猜亲戚叫你什么", count: 8 }
 ] as const;
 
 export type QuizLevel = (typeof levels)[number]["level"];
