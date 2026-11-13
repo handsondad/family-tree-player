@@ -1,5 +1,7 @@
+import { dialectEntries, dialectTraps, trapSpeech } from "./dialects.ts";
 import { calledMeFor, me, relatives, stepsText } from "./relatives.ts";
 import { chats, dadLines, doneLines, gameLines, rightLine } from "./lines.ts";
+import { stories } from "./stories.ts";
 import { tipSpeech, tips } from "./tips.ts";
 import { askBackPool, callPrompt, calledMePrompt, explain, whoPrompt, wrongLine } from "../lib/quiz.ts";
 import { chainSpeech, doorPrompt, greeting, matchPool, rowExplain, sideExplain, sidesPool } from "../lib/games.ts";
@@ -49,6 +51,14 @@ export function voiceLines(): Line[] {
     add("dad", intro);
     for (const text of done) add("dad", text);
   }
+  for (const story of stories) {
+    for (const turn of story.turns) {
+      add("nian", turn.nian);
+      add("dad", turn.dad);
+    }
+  }
+  for (const entry of dialectEntries) add("dad", entry.dadNote);
+  for (const trap of dialectTraps) add("dad", trapSpeech(trap));
 
   for (const relative of guessPool) add("dad", guessSpeech(relative));
   for (const steps of allTrains(voicedTrainDepth)) {

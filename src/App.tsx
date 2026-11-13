@@ -1,9 +1,11 @@
 import { useEffect, useState, type ComponentType } from "react";
 import type { Settings } from "./components/Shared";
 import { levels, type QuizLevel, type Step } from "./data/relatives";
+import { storyById } from "./data/stories";
 import { usePersisted } from "./hooks/usePersisted";
 import { stopSpeaking } from "./lib/speech";
 import type { GameId } from "./lib/games";
+import { DialectsPage } from "./pages/DialectsPage";
 import { DoorPage } from "./pages/DoorPage";
 import type { GameProps } from "./pages/games";
 import { HomePage } from "./pages/HomePage";
@@ -12,6 +14,7 @@ import { QuizHome, QuizPlay } from "./pages/QuizPage";
 import { isStep } from "./lib/train";
 import { RowsPage } from "./pages/RowsPage";
 import { SidesPage } from "./pages/SidesPage";
+import { StoriesHome, StoryPage } from "./pages/StoriesPage";
 import { TrainPage } from "./pages/TrainPage";
 import { TreePage } from "./pages/TreePage";
 
@@ -19,6 +22,8 @@ type Route =
   | { page: "home" }
   | { page: "tree"; id?: string }
   | { page: "train"; steps: Step[] }
+  | { page: "stories"; id?: string }
+  | { page: "dialects" }
   | { page: "quiz" }
   | { page: "play"; level: QuizLevel }
   | { page: "game"; game: GameId };
@@ -31,6 +36,8 @@ function parseRoute(hash: string): Route {
   const param = rawParam ? decodeURIComponent(rawParam) : undefined;
   if (page === "tree") return { page: "tree", id: param };
   if (page === "train") return { page: "train", steps: (param?.split(",") ?? []).filter(isStep) };
+  if (page === "stories") return { page: "stories", id: param };
+  if (page === "dialects") return { page: "dialects" };
   if (page === "quiz") {
     const level = levels.find((item) => String(item.level) === param);
     return level ? { page: "play", level: level.level } : { page: "quiz" };
@@ -46,6 +53,7 @@ export type Best = Partial<Record<GameId, number>>;
 function App() {
   const [sound, setSound] = usePersisted("ftp:sound", true);
   const [met, setMet] = usePersisted<string[]>("ftp:met", []);
+  const [readStories, setReadStories] = usePersisted<string[]>("ftp:stories", []);
   const [stars, setStars] = usePersisted<Stars>("ftp:stars", {});
   const [best, setBest] = usePersisted<Best>("ftp:best", {});
   const [route, setRoute] = useState(() => parseRoute(window.location.hash));
@@ -66,6 +74,7 @@ function App() {
   const go = (hash: string) => { window.location.hash = hash; };
   const goHome = () => go("#/");
   const meet = (id: string) => setMet((list) => (list.includes(id) ? list : [...list, id]));
+  const markStory = (id: string) => setReadStories((list) => (list.includes(id) ? list : [...list, id]));
   const openTree = (id?: string) => go(id ? `#/tree/${id}` : "#/tree");
   const openTrain = (steps: readonly Step[] = []) => go(steps.length ? `#/train/${steps.join(",")}` : "#/train");
 
@@ -76,6 +85,17 @@ function App() {
   if (route.page === "train") {
     return <TrainPage key={route.steps.join(",")} initialSteps={route.steps} settings={settings}
       onBack={goHome} onTree={openTree} />;
+  }
+  if (route.page === "stories") {
+    const story = storyById(route.id);
+    if (story) {
+      return <StoryPage key={story.id} story={story} settings={settings} readIds={readStories} onRead={markStory}
+        onBack={() => go("#/stories")} onOpen={(id) => go(`#/stories/${id}`)} onTree={openTree} />;
+    }
+    return <StoriesHome settings={settings} readIds={readStories} onBack={goHome} onOpen={(id) => go(`#/stories/${id}`)} />;
+  }
+  if (route.page === "dialects") {
+    return <DialectsPage settings={settings} onBack={goHome} onTree={openTree} />;
   }
   if (route.page === "quiz") {
     return <QuizHome settings={settings} stars={stars} onBack={goHome} onPlay={(level) => go(`#/quiz/${level}`)} />;
@@ -94,7 +114,7 @@ function App() {
     return <Game key={game} settings={settings} onBack={goHome} onTree={openTree}
       onFinish={(count) => setBest((prev) => ({ ...prev, [game]: Math.max(prev[game] ?? 0, count) }))} />;
   }
-  return <HomePage met={met} stars={stars} best={best} onTree={() => openTree()} onTrain={() => openTrain()} onGo={go} />;
+  return <HomePage met={met} readStories={readStories} stars={stars} best={best} onTree={() => openTree()} onTrain={() => openTrain()} onGo={go} />;
 }
 
 export default App;

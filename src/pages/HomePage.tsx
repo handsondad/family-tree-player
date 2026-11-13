@@ -3,14 +3,17 @@ import type { Best, Stars } from "../App";
 import { Avatar } from "../components/Avatar";
 import { starRow } from "../components/GameKit";
 import { SpeakButton } from "../components/Shared";
+import { dialectEntries, dialectRegions } from "../data/dialects";
 import { levels, relatives } from "../data/relatives";
 import { chats } from "../data/lines";
+import { stories } from "../data/stories";
 import { tipSpeech, tips } from "../data/tips";
 import type { GameId } from "../lib/games";
 import { dad, isSpeaking, nian, say, useSpeaking } from "../lib/speech";
 
 type Props = {
   met: readonly string[];
+  readStories: readonly string[];
   stars: Stars;
   best: Best;
   onTree: () => void;
@@ -18,12 +21,13 @@ type Props = {
   onGo: (hash: string) => void;
 };
 
-export function HomePage({ met, stars, best, onTree, onTrain, onGo }: Props) {
+export function HomePage({ met, readStories, stars, best, onTree, onTrain, onGo }: Props) {
   const [chat, setChat] = useState(0);
   const [nianLine, dadLine] = chats[chat];
   const speaking = useSpeaking();
   const total = relatives.length;
   const known = relatives.filter((relative) => met.includes(relative.id)).length;
+  const readCount = stories.filter((story) => readStories.includes(story.id)).length;
   const starCount = levels.reduce((sum, { level }) => sum + (stars[level] ?? 0), 0);
 
   /** 第一次点先把眼前这一段说出来，之后每点一次换下一段。 */
@@ -40,7 +44,9 @@ export function HomePage({ met, stars, best, onTree, onTrain, onGo }: Props) {
 
   const learn: Mode[] = [
     { emoji: "🌳", title: "我家的家族树", hook: "点一点每个人，看看该怎么叫，对方又怎么叫你。", count: `认识了 ${known} / ${total} 位亲戚`, color: "#6bcb77", onClick: onTree },
-    { emoji: "🚂", title: "称呼小火车", hook: "“爸爸的妈妈的哥哥”是谁？一节一节挂上车厢就知道。", count: "随便拼，还能让小火车出题考你", color: "#4d96ff", onClick: onTrain }
+    { emoji: "🚂", title: "称呼小火车", hook: "“爸爸的妈妈的哥哥”是谁？一节一节挂上车厢就知道。", count: "随便拼，还能让小火车出题考你", color: "#4d96ff", onClick: onTrain },
+    { emoji: "📖", title: "小念问爸爸", hook: "为什么英语只有一个 Uncle？堂和表、伯仲叔季是怎么来的？", count: `听过 ${readCount} / ${stories.length} 个故事`, color: "#a66cff", onClick: () => onGo("#/stories") },
+    { emoji: "🗺️", title: "各地叫法大不同", hook: "外婆叫姥姥、阿嬷还是姐婆？看看八大方言区怎么喊亲戚。", count: `${dialectRegions.length} 大方言 · ${dialectEntries.length} 位亲戚`, color: "#ff7a5c", onClick: () => onGo("#/dialects") }
   ];
   const play: Mode[] = [
     { emoji: "🏆", title: "称呼大闯关", hook: "入门、进阶、挑战三关，看你能拿几颗星。", count: `⭐ ${starCount} / ${levels.length * 3}`, color: "#ff9f43", onClick: () => onGo("#/quiz") },
@@ -100,7 +106,7 @@ function Modes({ id, title, modes }: { id: string; title: string; modes: readonl
   return (
     <section aria-labelledby={id}>
       <h2 id={id} className="section-title">{title}</h2>
-      <div className={`modes${modes.length === 2 ? " is-two" : ""}`}>
+      <div className={`modes${modes.length === 2 || modes.length === 4 ? " is-two" : ""}`}>
         {modes.map((mode) => {
           const hasStars = mode.count.includes("⭐") || mode.count.includes("☆");
           return (

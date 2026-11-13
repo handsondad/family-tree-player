@@ -55,6 +55,14 @@ export const relatives: readonly Relative[] = [
     id: "jiejie", steps: ["姐姐"], call: "姐姐", emoji: "👧", male: false, gen: 0, side: "home", level: 0,
     calledMe: ["弟弟", "妹妹"], tip: "比你大的女孩子是姐姐，你就是她的弟弟或者妹妹。"
   },
+  {
+    id: "didi", steps: ["弟弟"], call: "弟弟", emoji: "🧒", male: true, gen: 0, side: "home", level: 0,
+    calledMe: ["哥哥", "姐姐"], tip: "比你小的男孩子是弟弟，你就是他的哥哥。"
+  },
+  {
+    id: "meimei", steps: ["妹妹"], call: "妹妹", emoji: "👧", male: false, gen: 0, side: "home", level: 0,
+    calledMe: ["哥哥", "姐姐"], tip: "比你小的女孩子是妹妹，你就是她的哥哥。"
+  },
 
   // 入门
   {
@@ -120,8 +128,20 @@ export const relatives: readonly Relative[] = [
     calledMe: ["堂弟", "堂妹"], tip: "伯伯、叔叔家的孩子，是你的堂哥、堂姐、堂弟、堂妹。你们的爷爷是同一个人，通常还和你一个姓。"
   },
   {
+    id: "tangjie", steps: ["爸爸", "哥哥", "女儿"], call: "堂姐", emoji: "👧", male: false, gen: 0, side: "dad", level: 2, age: "older",
+    calledMe: ["堂弟", "堂妹"], tip: "伯伯的女儿比你大，就是你的堂姐。你们都有同一个爷爷，是一家人里的堂姐弟。"
+  },
+  {
+    id: "tangdi", steps: ["爸爸", "弟弟", "儿子"], call: "堂弟", emoji: "👦", male: true, gen: 0, side: "dad", level: 2, age: "younger",
+    calledMe: ["堂哥", "堂姐"], tip: "叔叔的儿子比你小，就是你的堂弟，他管你叫堂哥。"
+  },
+  {
     id: "tangmei", steps: ["爸爸", "弟弟", "女儿"], call: "堂妹", emoji: "👧", male: false, gen: 0, side: "dad", level: 2, age: "younger",
     calledMe: ["堂哥", "堂姐"], tip: "叔叔的女儿比你小，就是你的堂妹。只有爸爸的哥哥弟弟家的孩子，才叫“堂”。"
+  },
+  {
+    id: "biaoge", steps: ["妈妈", "姐姐", "儿子"], call: "表哥", also: ["姨表哥"], emoji: "👦", male: true, gen: 0, side: "mom", level: 2, age: "older",
+    calledMe: ["表弟", "表妹"], tip: "姨妈的儿子比你大，就是你的表哥。姑姑、舅舅、姨妈家的男孩比你大，都叫表哥。"
   },
   {
     id: "biaojie", steps: ["爸爸", "妹妹", "女儿"], call: "表姐", also: ["姑表姐"], emoji: "👧", male: false, gen: 0, side: "dad", level: 2, age: "older",
@@ -140,12 +160,28 @@ export const relatives: readonly Relative[] = [
     calledMe: ["小叔子", "小姑子"], tip: "哥哥的老婆叫嫂子。平时她多半直接叫你的名字。"
   },
   {
+    id: "dimei", steps: ["弟弟", "老婆"], call: "弟妹", also: ["弟媳"], emoji: "👩", male: false, gen: 0, side: "home", level: 2, askBack: false,
+    calledMe: ["大伯子", "大姑子"], tip: "弟弟长大结婚了，他的老婆叫弟妹，也叫弟媳。嫂子和弟妹两个人合起来叫“妯娌”。"
+  },
+  {
     id: "jiefu", steps: ["姐姐", "老公"], call: "姐夫", emoji: "👨", male: true, gen: 0, side: "home", level: 2, askBack: false,
     calledMe: ["小舅子", "小姨子"], tip: "姐姐的老公叫姐夫。按规矩，他管你叫小舅子或者小姨子。"
   },
   {
+    id: "meifu", steps: ["妹妹", "老公"], call: "妹夫", emoji: "👨", male: true, gen: 0, side: "home", level: 2, askBack: false,
+    calledMe: ["大舅子", "大姨子"], tip: "妹妹长大结婚了，她的老公叫妹夫。姐夫和妹夫两个人合起来叫“连襟”。"
+  },
+  {
     id: "zhizi", steps: ["哥哥", "儿子"], call: "侄子", emoji: "👶", male: true, gen: -1, side: "home", level: 2,
     calledMe: ["叔叔", "小姑"], tip: "哥哥的儿子叫侄子。这时候你就升级当叔叔或者姑姑啦，虽然你可能还在上学！"
+  },
+  {
+    id: "zhinv", steps: ["哥哥", "女儿"], call: "侄女", emoji: "👧", male: false, gen: -1, side: "home", level: 2,
+    calledMe: ["叔叔", "小姑"], tip: "哥哥和弟弟的孩子，男孩叫侄子，女孩叫侄女。你比哥哥小，她就管你叫叔叔。"
+  },
+  {
+    id: "waisheng", steps: ["姐姐", "儿子"], call: "外甥", emoji: "👦", male: true, gen: -1, side: "home", level: 2,
+    calledMe: ["小舅", "小姨"], tip: "姐姐和妹妹的儿子叫外甥。老话说“外甥多似舅”，你是她妈妈的弟弟，他管你叫小舅。"
   },
   {
     id: "waishengnv", steps: ["姐姐", "女儿"], call: "外甥女", emoji: "👶", male: false, gen: -1, side: "home", level: 2,
@@ -155,19 +191,40 @@ export const relatives: readonly Relative[] = [
   // 挑战
   {
     id: "taiyeye", steps: ["爸爸", "爸爸", "爸爸"], call: "太爷爷", also: ["曾祖父"], emoji: "👴", male: true, gen: 3, side: "dad", level: 3,
+    notWith: ["waitaigong"],
     calledMe: ["曾孙", "曾孙女"], tip: "爷爷的爸爸叫太爷爷，书上写作曾祖父。你是他的曾孙或者曾孙女。"
   },
   {
     id: "tainainai", steps: ["爸爸", "爸爸", "妈妈"], call: "太奶奶", also: ["曾祖母"], emoji: "👵", male: false, gen: 3, side: "dad", level: 3,
+    notWith: ["waitaipo"],
     calledMe: ["曾孙", "曾孙女"], tip: "爷爷的妈妈叫太奶奶。比爷爷奶奶再高一辈，就在前面加一个“太”字。"
+  },
+  {
+    id: "waitaigong", steps: ["妈妈", "爸爸", "爸爸"], call: "外太公", also: ["外曾祖父", "太姥爷"], emoji: "👴", male: true, gen: 3, side: "mom", level: 3,
+    notWith: ["taiyeye"],
+    calledMe: ["曾外孙", "曾外孙女"], tip: "外公的爸爸叫外太公，北方叫太姥爷，书上写外曾祖父。和爷爷那边的太爷爷一样高一辈。"
+  },
+  {
+    id: "waitaipo", steps: ["妈妈", "爸爸", "妈妈"], call: "外太婆", also: ["外曾祖母", "太姥姥"], emoji: "👵", male: false, gen: 3, side: "mom", level: 3,
+    notWith: ["tainainai"],
+    calledMe: ["曾外孙", "曾外孙女"], tip: "外公的妈妈叫外太婆，北方叫太姥姥。比外公外婆再往上一辈，就加上“太”字。"
   },
   {
     id: "dayeye", steps: ["爸爸", "爸爸", "哥哥"], call: "大爷爷", also: ["伯公", "伯祖父"], emoji: "👴", male: true, gen: 2, side: "dad", level: 3,
     calledMe: ["侄孙", "侄孙女"], tip: "爷爷的哥哥叫大爷爷，有的地方叫伯公。就像爸爸的哥哥叫伯伯，再往上一辈就成了“伯公”。"
   },
   {
+    id: "xiaoyeye", steps: ["爸爸", "爸爸", "弟弟"], call: "小爷爷", also: ["叔公", "叔祖父"], emoji: "👴", male: true, gen: 2, side: "dad", level: 3,
+    calledMe: ["侄孙", "侄孙女"], tip: "爷爷的弟弟叫小爷爷，南方多叫叔公。爸爸叫他叔叔，到你这辈就升成小爷爷、叔公啦。"
+  },
+  {
     id: "gunainai", steps: ["爸爸", "爸爸", "妹妹"], call: "姑奶奶", also: ["姑婆"], emoji: "👵", male: false, gen: 2, side: "dad", level: 3,
     calledMe: ["侄孙", "侄孙女"], tip: "爷爷的姐妹叫姑奶奶，南方叫姑婆。她是爸爸的姑姑，再往上一辈就是你的姑奶奶。"
+  },
+  {
+    id: "yinainai", steps: ["爸爸", "妈妈", "妹妹"], call: "姨奶奶", also: ["姨婆"], emoji: "👵", male: false, gen: 2, side: "dad", level: 3,
+    notWith: ["yipo"],
+    calledMe: ["甥孙", "甥孙女"], tip: "奶奶的姐妹，是爸爸的姨妈。爸爸叫她姨妈，你就叫她姨奶奶，有的地方也叫姨婆。"
   },
   {
     id: "jiuyeye", steps: ["爸爸", "妈妈", "哥哥"], call: "舅爷爷", also: ["舅爷", "大舅爷"], emoji: "👴", male: true, gen: 2, side: "dad", level: 3,
@@ -181,6 +238,7 @@ export const relatives: readonly Relative[] = [
   },
   {
     id: "yipo", steps: ["妈妈", "妈妈", "妹妹"], call: "姨婆", also: ["姨外婆", "姨姥姥"], emoji: "👵", male: false, gen: 2, side: "mom", level: 3,
+    notWith: ["yinainai"],
     calledMe: ["甥外孙", "甥外孙女"], tip: "外婆的姐妹，是妈妈的姨妈。你叫她姨婆，北方叫姨姥姥。"
   }
 ];
