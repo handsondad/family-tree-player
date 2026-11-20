@@ -3,7 +3,7 @@ import { DadSays, SpeakButton, TopBar, calledMeText, meEmoji, type Settings } fr
 import { dadLines } from "../data/lines";
 import { me, relativeBySteps, stepsText, type Relative, type Step } from "../data/relatives";
 import { calledBy, callOf, isMaleStep } from "../lib/kinship";
-import { dad, nian, say } from "../lib/speech";
+import { dad, nian, say, stopSpeaking } from "../lib/speech";
 import { ageWord, blocked, emojiOf, examples, guessPool, guessPrompt, guessSpeech, maxCars, namesSpeech, stepButtons, sureRelative, trainNames } from "../lib/train";
 
 type Props = {
@@ -30,6 +30,8 @@ export function TrainPage({ initialSteps, settings, onBack, onTree }: Props) {
   useEffect(() => {
     if (settings.sound && guessing && question) say(dad(guessSpeech(question)));
     else if (settings.sound && names.length) say(nian(namesSpeech(names)), ...(known && known.level > 0 ? [dad(known.tip)] : []));
+    // 清空了或者没什么可说的，上一节车厢的话就别再念了
+    else stopSpeaking();
     const el = trackRef.current;
     if (el) el.scrollTo({ left: el.scrollWidth, behavior: "smooth" });
   }, [steps, guessing]);

@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { DadSays, Person, SpeakButton, TopBar, calledMeText, meEmoji, type Settings } from "../components/Shared";
+import { dad, nian, say, stopSpeaking } from "../lib/speech";
 import { relativeById, relativeBySteps, relatives, sideNames, type Relative, type Step } from "../data/relatives";
 import { dadLines } from "../data/lines";
-import { dad, nian, say } from "../lib/speech";
 
 /** 坐标在 1000 × 580 的画布里。 */
 const nodes: readonly { id: string; x: number; y: number }[] = [
@@ -91,6 +91,8 @@ export function TreePage({ initialId, settings, met, onMeet, onBack, onTrain }: 
     setSelected(id);
     const next = relativeById(id);
     if (next && settings.sound && shown(id)) say(nian(next.call), dad(next.tip));
+    // 换到没什么可说的人（回到我、还没揭晓的「？」），上一位的话就别再念了
+    else stopSpeaking();
     if (scroll) cardRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
 
@@ -233,8 +235,9 @@ function RelativeCard({ relative, settings, hidden, hideAll, onReveal, onPick, o
         </>
       )}
 
+      {/* 藏名字的时候不能在这里把上一位的称呼说出来 */}
       {!inTree.has(relative.id) && parent && (
-        <p className="rc-note">树上没画{relative.male ? "他" : "她"}，{relative.male ? "他" : "她"}是{parent.call}的{relative.steps[relative.steps.length - 1]}。</p>
+        <p className="rc-note">树上没画{relative.male ? "他" : "她"}，{relative.male ? "他" : "她"}是{hideAll ? "树上那位亲戚" : parent.call}的{relative.steps[relative.steps.length - 1]}。</p>
       )}
       <FamilyChips steps={relative.steps} pronoun={relative.male ? "他" : "她"} onPick={onPick} parent={parent ?? (relative.steps.length === 1 ? "me" : undefined)} named={!hideAll} />
 

@@ -73,6 +73,8 @@ export function QuizPlay({ level, settings, onBack, onAgain, onNext, onTree, onF
   }
 
   function next() {
+    // 最后一题的讲解还没开口就点了「看星星」，别让它盖掉结束语
+    window.clearTimeout(later.current);
     if (index + 1 < questions.length) {
       setIndex(index + 1);
       setPicked(null);
