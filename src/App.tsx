@@ -31,9 +31,19 @@ type Route =
 const games: Record<GameId, ComponentType<GameProps>> = { door: DoorPage, rows: RowsPage, sides: SidesPage, match: MatchPage };
 const isGame = (value: string): value is GameId => Object.prototype.hasOwnProperty.call(games, value);
 
+// 断掉的分享链接（#/tree/%E5%A6）解不开，当成没写参数，不要整页白屏
+function decodeParam(raw: string | undefined) {
+  if (!raw) return undefined;
+  try {
+    return decodeURIComponent(raw);
+  } catch {
+    return undefined;
+  }
+}
+
 function parseRoute(hash: string): Route {
   const [, page, rawParam] = hash.replace(/^#/, "").split("/");
-  const param = rawParam ? decodeURIComponent(rawParam) : undefined;
+  const param = decodeParam(rawParam);
   if (page === "tree") return { page: "tree", id: param };
   if (page === "train") return { page: "train", steps: (param?.split(",") ?? []).filter(isStep) };
   if (page === "stories") return { page: "stories", id: param };
@@ -60,13 +70,16 @@ function App() {
   const [round, setRound] = useState(0);
 
   useEffect(() => {
-    const onHash = () => setRoute(parseRoute(window.location.hash));
+    // 要在新页面开口之前把上一页的声音停掉：子组件的 effect 比这里先跑，放在 [route] 的 effect 里会把新页面的开场白也掐掉
+    const onHash = () => {
+      stopSpeaking();
+      setRoute(parseRoute(window.location.hash));
+    };
     window.addEventListener("hashchange", onHash);
     return () => window.removeEventListener("hashchange", onHash);
   }, []);
 
   useEffect(() => {
-    stopSpeaking();
     window.scrollTo(0, 0);
   }, [route]);
 
